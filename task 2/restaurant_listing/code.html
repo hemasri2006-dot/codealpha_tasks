@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#6bff8f", "on-primary-fixed-variant": "#793100", "outline-variant": "#dec0b3", "tertiary-container": "#00b552", "surface": "#fcf9f8", "secondary-fixed": "#ffddb5", "primary-fixed-dim": "#ffb692", "on-error-container": "#93000a", "surface-container": "#f0eded", "background": "#fcf9f8", "surface-container-high": "#eae7e7", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#4ae176", "on-secondary-fixed-variant": "#643f00", "primary": "#9f4200", "error": "#ba1a1a", "inverse-surface": "#303030", "tertiary": "#006e2f", "on-tertiary-fixed": "#002109", "on-surface-variant": "#574238", "on-tertiary-fixed-variant": "#005321", "surface-bright": "#fcf9f8", "on-primary": "#ffffff", "surface-tint": "#9f4200", "on-primary-container": "#5c2300", "surface-container-highest": "#e4e2e1", "inverse-primary": "#ffb692", "surface-container-low": "#f6f3f2", "outline": "#8b7267", "on-primary-fixed": "#341100", "secondary-container": "#fdae37", "error-container": "#ffdad6", "surface-dim": "#dcd9d9", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f3f0ef", "surface-variant": "#e4e2e1", "on-surface": "#1b1c1c", "on-secondary-container": "#6c4400", "secondary": "#845400", "primary-fixed": "#ffdbcb", "on-tertiary": "#ffffff", "on-secondary-fixed": "#2a1800", "primary-container": "#f47b35", "on-tertiary-container": "#003e17", "secondary-fixed-dim": "#ffb958", "on-background": "#1b1c1c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fcf9f8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full flex items-center justify-between px-margin pt-safe h-6 text-on-surface select-none"><span class="font-label-md text-label-md tracking-tight font-semibold">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs shrink-0"><img alt="FoodieGo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBI19zoxW4ZXt-At0FBPz5Imwzf86vCVeRPB3c6gKlK70TVRo9EzZP8gJQ00j-71pDXFniFO64Zxm7UWwVPB_oEspSvU4Qdp3XP6rsxTmabriqCEFtijlasYqFPjJ9nf0s2qh_lJX0nd4SptSk0wYJ6gAJnl4H4EID11lM1-aNJe0rpJlyVUBAes7cCV-631XsTf0MqDurqSQP1hEt8pPQ_rM-nAt_EIoZuM2z2EGtp1Q"/><span class="font-headline-sm text-headline-sm font-extrabold text-primary-container tracking-tight hidden sm:inline">FoodieGo</span></div><div class="flex-1 max-w-[200px] mx-space-xs"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-low shadow-[0_2px_8px_rgba(244,123,53,0.06)]"><span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">location_on</span><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider leading-none">Deliver to</span><span class="font-label-md text-label-md text-on-surface truncate leading-tight font-semibold">24 Maple Ave, Apt 4B</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px] shrink-0">expand_more</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span></button><button class="w-11 h-11 rounded-full flex items-center justify-center shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNlMr1RTTMDOKkCJyHeyzMI7l1VmZHKR0UTzD2jUzkeg0NJHQQiM2U73eVthzrmhIQp7R6pOKLyxt_75bKjFRckI5V5z_v87WiJWmFCClvY6OKqdq7K14VL0ckF06wRai98o3dQtZ0z9uHkkfSH61rmZsAH_rHRnMNupNEml3fvMAXFQ6KYiUfuRgrfIMkeW84kWitbdlxChyPVJ__-77RFDrKOtJy5WQtdetOSk0K"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Discovery Header -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Explore Restaurants</h1>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+          48 spots serving your neighborhood
+        </p>
+</div>
+<button aria-label="Quick Search" class="w-10 h-10 rounded-full bg-surface-container-low text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+</div>
+</section>
+<!-- Filter Chips Bar (Touch scrollable) -->
+<section class="w-full overflow-x-auto scrollbar-none py-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs px-margin min-w-max">
+<!-- Active Pill -->
+<button class="filter-pill active px-3.5 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-md flex items-center gap-1.5 transition-all">
+<span>All</span>
+<span class="px-1.5 py-0.5 rounded-full bg-on-primary/20 text-on-primary text-[10px] font-bold">48</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-secondary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>Top Rated 4.5+</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-primary-container text-[16px]">bolt</span>
+<span>Under 30 min</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-tertiary text-[16px]">delivery_dining</span>
+<span>Free Delivery</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-primary text-[16px]">percent</span>
+<span>Offers</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm flex items-center gap-1.5 active:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-tertiary text-[16px]">eco</span>
+<span>Veg &amp; Healthy</span>
+</button>
+</div>
+</section>
+<!-- Sort & Layout Toggle Strip -->
+<section class="px-margin mb-space-sm flex items-center justify-between text-on-surface-variant">
+<button class="flex items-center gap-1 py-1 text-on-surface font-label-md text-label-md active:opacity-75">
+<span class="text-on-surface-variant font-normal">Sorted by:</span>
+<span class="font-bold text-primary-container">Recommended</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container">expand_more</span>
+</button>
+<div class="flex items-center bg-surface-container-low p-0.5 rounded-full shadow-inner">
+<button aria-label="Comfortable card view" class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+</button>
+<button aria-label="Compact list view" class="w-8 h-8 rounded-full text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">calendar_view_day</span>
+</button>
+</div>
+</section>
+<!-- Restaurant List -->
+<div class="flex flex-col gap-space-lg px-margin pb-space-xl">
+<!-- CARD 1: Artisan Burger Co. -->
+<article class="w-full bg-surface-container-lowest rounded-[20px] shadow-[0_4px_24px_-4px_rgba(244,123,53,0.1)] overflow-hidden flex flex-col active:scale-[0.99] transition-transform cursor-pointer">
+<!-- Media Header -->
+<div class="relative w-full h-48 bg-surface-container-high overflow-hidden">
+<img alt="Artisan Burger Co." class="w-full h-full object-cover" data-alt="Mouthwatering gourmet artisan cheeseburger with caramelized onions, melted aged cheddar, smoked bacon, crisp butterhead lettuce, and garlic aioli on a toasted brioche bun, surrounded by golden fries on dark butcher paper with warm studio lighting and soft orange brand glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAelyCvMena9gSSp3gEJtYSPG8b2BW4m-LIiiXHQxceezE-FN-pobn0v2c8V7mDuK1xylrOl8mCeNPyJAUK97g6yMmOvS2wcI6D7fVEC8yhQQMW0nh5Nm5hEaS9tHPIzyyr_pdfLDZ5xDnYZ5KgSjMSs17sSYcZaO9puHSBs62uwemb2BJpcCzGIbYeyCL3zuCXjiJytdU8aVV90-i_ZMjLdn2u73JaXegZl09dS3Pt"/>
+<!-- Top Overlay Badges -->
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+<span class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-md flex items-center gap-1 tracking-wide uppercase">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> 20% OFF
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-tertiary font-label-sm text-label-sm shadow-sm font-bold">
+            Free Delivery
+          </span>
+</div>
+<!-- Favorite Button -->
+<button aria-label="Bookmark Artisan Burger Co." class="favorite-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<!-- Distance & Delivery Tag Bottom Image Scrim -->
+<div class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>1.2 mi</span>
+</div>
+</div>
+<!-- Details Content -->
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Artisan Burger Co.</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">American • Gourmet Burgers • Craft Shakes</p>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 rounded-lg bg-secondary-fixed/50 shrink-0">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-secondary-fixed font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">(1.2k)</span>
+</div>
+</div>
+<!-- Metric Badges Row -->
+<div class="flex items-center flex-wrap gap-y-1 gap-x-3 pt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">schedule</span>
+            20-25 min
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[16px]">delivery_dining</span>
+            $0.00 Delivery
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant">$$</span>
+</div>
+<!-- Culinary Delight Pill -->
+<div class="mt-1 pt-2.5 flex items-center justify-between bg-surface-container-low/70 px-3 py-2 rounded-xl">
+<div class="flex items-center gap-2 overflow-hidden">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">restaurant_menu</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">
+<strong class="font-label-md text-label-md text-primary-container">Popular:</strong> Famous Double Truffle Melt
+            </span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- CARD 2: Mamma Mia Trattoria -->
+<article class="w-full bg-surface-container-lowest rounded-[20px] shadow-[0_4px_24px_-4px_rgba(244,123,53,0.1)] overflow-hidden flex flex-col active:scale-[0.99] transition-transform cursor-pointer">
+<div class="relative w-full h-48 bg-surface-container-high overflow-hidden">
+<img alt="Mamma Mia Trattoria" class="w-full h-full object-cover" data-alt="Rustic Neapolitan woodfired pizza with bubbly charred crust, creamy melted burrata cheese ball in the center, San Marzano tomato sauce, fresh green basil leaves, and extra virgin olive oil drizzle set on an antique marble table with warm amber restaurant background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHxD3qub3rC3VGxYcYa-vgG6UxWPyeHT4nCRYg6MfmF00q19ZZhU2a6yF4liqJD3wb5-66fVVCglR9kPaDQBbUWwJ-EBlkRVSy3_z76yLPH754vZsXzR1igo9wW_btDzwGKSszScMMgiKl9tYrN_-0SlHJTKz9HAWEdn2qGYxe6UIU8yx-dYqv9ZkMMzYmMEw2UxEwVhUbiIAH6Tlo3zimozEKYn2Rlus_eDM8DCAc"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-md flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">award_star</span> Staff Pick
+          </span>
+</div>
+<button aria-label="Bookmark Mamma Mia Trattoria" class="favorite-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>2.0 mi</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Mamma Mia Trattoria</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Authentic Italian • Woodfired Pizza &amp; Pasta</p>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 rounded-lg bg-secondary-fixed/50 shrink-0">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-secondary-fixed font-bold">4.8</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">(850+)</span>
+</div>
+</div>
+<div class="flex items-center flex-wrap gap-y-1 gap-x-3 pt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">schedule</span>
+            25-35 min
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[16px]">delivery_dining</span>
+            $1.99 Delivery
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant">$$</span>
+</div>
+<div class="mt-1 pt-2.5 flex items-center justify-between bg-surface-container-low/70 px-3 py-2 rounded-xl">
+<div class="flex items-center gap-2 overflow-hidden">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">local_fire_department</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">
+<strong class="font-label-md text-label-md text-primary-container">Featured:</strong> Margherita Burrata Special
+            </span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- CARD 3: Tokyo Noodle Bar & Ramen -->
+<article class="w-full bg-surface-container-lowest rounded-[20px] shadow-[0_4px_24px_-4px_rgba(244,123,53,0.1)] overflow-hidden flex flex-col active:scale-[0.99] transition-transform cursor-pointer">
+<div class="relative w-full h-48 bg-surface-container-high overflow-hidden">
+<img alt="Tokyo Noodle Bar &amp; Ramen" class="w-full h-full object-cover" data-alt="Steaming bowl of rich authentic Tonkotsu ramen with creamy pork broth, hand-pulled wavy noodles, tender chashu pork slices, jammy seasoned soft-boiled egg, nori sheet, menma bamboo shoots, and scallions in a textured Japanese ceramic bowl with rising aromatic steam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQzsaxQbWxr_4cTru68-aAzIk1rUKJaLfWw-BOc_KsZnrDBP11zT_gplLEk6yOiOI64S__O-9VoELbijLW00l6TD3QI4li6E3YfZK_2ii3TpX62tLmCAqhEPvQRxiAYujCDCJLzlYY1-B4ENJFvQqe4ekVyiUGno26v04CKdpc9EbN0v01wFckw778frB0JkjwfuN4X-AYVtEZJR1lhaDnim2aCz6uKRICm3XHU442"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-tertiary font-label-sm text-label-sm shadow-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">electric_bolt</span> Fast Prep
+          </span>
+</div>
+<button aria-label="Bookmark Tokyo Noodle Bar" class="favorite-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>0.8 mi</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Tokyo Noodle Bar &amp; Ramen</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Japanese • Tonkotsu Ramen • Gyoza</p>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 rounded-lg bg-secondary-fixed/50 shrink-0">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-secondary-fixed font-bold">4.7</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">(640+)</span>
+</div>
+</div>
+<div class="flex items-center flex-wrap gap-y-1 gap-x-3 pt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">schedule</span>
+            15-25 min
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[16px]">delivery_dining</span>
+            Free Delivery
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant">$</span>
+</div>
+<div class="mt-1 pt-2.5 flex items-center justify-between bg-surface-container-low/70 px-3 py-2 rounded-xl">
+<div class="flex items-center gap-2 overflow-hidden">
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">ramen_dining</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">
+<strong class="font-label-md text-label-md text-primary-container">Chef's Choice:</strong> Signature Black Garlic Tonkotsu
+            </span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- CARD 4: Green Garden Organics -->
+<article class="w-full bg-surface-container-lowest rounded-[20px] shadow-[0_4px_24px_-4px_rgba(244,123,53,0.1)] overflow-hidden flex flex-col active:scale-[0.99] transition-transform cursor-pointer">
+<div class="relative w-full h-48 bg-surface-container-high overflow-hidden">
+<img alt="Green Garden Organics" class="w-full h-full object-cover" data-alt="Vibrant healthy grain bowl with roasted sweet potatoes, sliced avocado, edamame, tri-color quinoa, pickled cabbage, massaged kale, toasted pumpkin seeds, and bright tahini dressing in a ceramic bowl, sunlit natural setting with soft organic green styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwbM1GAU1brVkoqHYBz8sXLCJ5F8b0w9soq54UkLJiqqRlffTQnj4PUeA3yuPQAkDR6X97NNZVo8EqGC6b6W5zrYUH432TQeUnW16PgrslZa-CmiNTbAQAaUKsVaFlDpnJmI6zKkzh7vzTOx_OXdLyj635sSU-JEu5le2QFt7FyAJmWT1nSsWIxUTHLCsLIwgR1w-kHSJF_yhG0mpXQCoI5I3GMbbQad3wGQsC8bg0"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+<span class="px-2.5 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm shadow-md flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">eco</span> 100% Plant-Based
+          </span>
+</div>
+<button aria-label="Bookmark Green Garden Organics" class="favorite-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>1.5 mi</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Green Garden Organics</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Bowls • Smoothies • Plant-based Clean Eats</p>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 rounded-lg bg-secondary-fixed/50 shrink-0">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-secondary-fixed font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">(410+)</span>
+</div>
+</div>
+<div class="flex items-center flex-wrap gap-y-1 gap-x-3 pt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">schedule</span>
+            20-30 min
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[16px]">delivery_dining</span>
+            $2.49 Delivery
+          </span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant">$$</span>
+</div>
+<div class="mt-1 pt-2.5 flex items-center justify-between bg-surface-container-low/70 px-3 py-2 rounded-xl">
+<div class="flex items-center gap-2 overflow-hidden">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">nutrition</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">
+<strong class="font-label-md text-label-md text-tertiary">Popular:</strong> Goddess Rainbow Glow Bowl
+            </span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+<script>
+  // Filter pills toggle micro-interaction
+  document.querySelectorAll('.filter-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-pill').forEach(p => {
+        p.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-md', 'active');
+        p.classList.add('bg-surface-container-lowest', 'text-on-surface-variant', 'shadow-sm');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-md', 'active');
+      btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant', 'shadow-sm');
+    });
+  });
+
+  // Bookmark / Favorite tap micro-interaction
+  document.querySelectorAll('.favorite-btn').forEach(fav => {
+    fav.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const icon = fav.querySelector('.material-symbols-outlined');
+      const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+      if (isFilled) {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        fav.classList.remove('text-primary');
+        fav.classList.add('text-on-surface');
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        fav.classList.add('text-primary');
+        fav.classList.remove('text-on-surface');
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_-2px_rgba(244,123,53,0.08)]" data-active-classes="text-primary-container font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 transition-colors text-primary-container font-bold" data-path="restaurants" href="#"><span class="material-symbols-outlined text-[24px]">restaurant</span><span class="font-label-sm text-label-sm">Eats</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors relative" data-path="cart" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-2 min-w-[16px] h-4 px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></div><span class="font-label-sm text-label-sm">Cart</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm">Orders</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

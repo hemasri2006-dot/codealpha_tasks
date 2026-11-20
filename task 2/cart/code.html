@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#6bff8f", "on-primary-fixed-variant": "#793100", "outline-variant": "#dec0b3", "tertiary-container": "#00b552", "surface": "#fcf9f8", "secondary-fixed": "#ffddb5", "primary-fixed-dim": "#ffb692", "on-error-container": "#93000a", "surface-container": "#f0eded", "background": "#fcf9f8", "surface-container-high": "#eae7e7", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#4ae176", "on-secondary-fixed-variant": "#643f00", "primary": "#9f4200", "error": "#ba1a1a", "inverse-surface": "#303030", "tertiary": "#006e2f", "on-tertiary-fixed": "#002109", "on-surface-variant": "#574238", "on-tertiary-fixed-variant": "#005321", "surface-bright": "#fcf9f8", "on-primary": "#ffffff", "surface-tint": "#9f4200", "on-primary-container": "#5c2300", "surface-container-highest": "#e4e2e1", "inverse-primary": "#ffb692", "surface-container-low": "#f6f3f2", "outline": "#8b7267", "on-primary-fixed": "#341100", "secondary-container": "#fdae37", "error-container": "#ffdad6", "surface-dim": "#dcd9d9", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f3f0ef", "surface-variant": "#e4e2e1", "on-surface": "#1b1c1c", "on-secondary-container": "#6c4400", "secondary": "#845400", "primary-fixed": "#ffdbcb", "on-tertiary": "#ffffff", "on-secondary-fixed": "#2a1800", "primary-container": "#f47b35", "on-tertiary-container": "#003e17", "secondary-fixed-dim": "#ffb958", "on-background": "#1b1c1c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fcf9f8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full flex items-center justify-between px-margin pt-safe h-6 text-on-surface select-none"><span class="font-label-md text-label-md tracking-tight font-semibold">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs shrink-0"><img alt="FoodieGo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBI19zoxW4ZXt-At0FBPz5Imwzf86vCVeRPB3c6gKlK70TVRo9EzZP8gJQ00j-71pDXFniFO64Zxm7UWwVPB_oEspSvU4Qdp3XP6rsxTmabriqCEFtijlasYqFPjJ9nf0s2qh_lJX0nd4SptSk0wYJ6gAJnl4H4EID11lM1-aNJe0rpJlyVUBAes7cCV-631XsTf0MqDurqSQP1hEt8pPQ_rM-nAt_EIoZuM2z2EGtp1Q"/><span class="font-headline-sm text-headline-sm font-extrabold text-primary-container tracking-tight hidden sm:inline">FoodieGo</span></div><div class="flex-1 max-w-[200px] mx-space-xs"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-low shadow-[0_2px_8px_rgba(244,123,53,0.06)]"><span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">location_on</span><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider leading-none">Deliver to</span><span class="font-label-md text-label-md text-on-surface truncate leading-tight font-semibold">24 Maple Ave, Apt 4B</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px] shrink-0">expand_more</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span></button><button class="w-11 h-11 rounded-full flex items-center justify-center shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNlMr1RTTMDOKkCJyHeyzMI7l1VmZHKR0UTzD2jUzkeg0NJHQQiM2U73eVthzrmhIQp7R6pOKLyxt_75bKjFRckI5V5z_v87WiJWmFCClvY6OKqdq7K14VL0ckF06wRai98o3dQtZ0z9uHkkfSH61rmZsAH_rHRnMNupNEml3fvMAXFQ6KYiUfuRgrfIMkeW84kWitbdlxChyPVJ__-77RFDrKOtJy5WQtdetOSk0K"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-28 bg-surface"><div class="flex flex-col w-full px-margin pb-6 gap-space-md">
+<!-- Top Bar: Title & Action -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-baseline gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">My Cart</h1>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">(3 items)</span>
+</div>
+<button class="flex items-center gap-1 text-primary hover:text-on-primary-container active:scale-95 transition-all" id="clearCartBtn">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+<span class="font-label-md text-label-md underline underline-offset-4 decoration-primary/40 font-semibold">Clear all</span>
+</button>
+</div>
+<!-- Restaurant Source Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_20px_-2px_rgba(244,123,53,0.08),0_2px_6px_-1px_rgba(36,36,36,0.04)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">The Burger Barn</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary-container">schedule</span>
+            20–25 mins prep time
+          </span>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low text-primary-container font-label-sm text-label-sm hover:bg-primary-fixed/40 transition-colors">
+        View Menu
+      </button>
+</div>
+<!-- Free Delivery Milestone Bar -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">local_shipping</span>
+<span class="font-label-sm text-label-sm font-semibold">Free Delivery Goal</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Add $4.02 more</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-500 ease-out" style="width: 88%;"></div>
+</div>
+</div>
+</div>
+<!-- Cart Item List -->
+<div class="flex flex-col gap-space-sm" id="cartItemList">
+<!-- Item 1: Smokey Bacon Cheddar Burger -->
+<div class="cart-item bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-[0_4px_20px_-2px_rgba(244,123,53,0.08),0_2px_6px_-1px_rgba(36,36,36,0.04)] items-center">
+<img class="w-20 h-20 rounded-lg object-cover shrink-0" data-alt="A gourmet artisan smokey bacon cheeseburger with melted sharp cheddar, crispy Applewood smoked bacon, caramelized onions on a glazed brioche bun, studio culinary light with appetizing warm orange tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXRN6DIWuIj9wQ7OGDh17O6YXeQLX9GtMHmgXeR3ZUnwE_FUYhlkISzrLwwgJjFoptGEdZyVf5wMULQpTzBmuU5oqFAy7cecp_wTlWBdinb5r1Rr0I6LESlikt0ldQKByT_dhgmsj86huJ1x5wjhpGLmitHkyHXdRam8lX3lUQcxWOqyLptI7xcYIb2j24hletVDRenVJOIUt0Bab2UF4SGyofasLwKokejiJYWAz0"/>
+<div class="flex flex-col flex-1 min-w-0 justify-between h-full py-0.5">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Smokey Bacon Cheddar</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Brioche bun, Extra Cheddar</p>
+</div>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface-variant hover:text-error transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px]">delete_outline</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$25.98</span>
+<!-- Pill Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-full px-1 py-0.5">
+<button class="w-7 h-7 rounded-full flex items-center justify-center text-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-6 text-center font-label-md text-label-md text-on-surface font-bold">2</span>
+<button class="w-7 h-7 rounded-full flex items-center justify-center text-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2: Crispy Truffle Parmesan Fries -->
+<div class="cart-item bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-[0_4px_20px_-2px_rgba(244,123,53,0.08),0_2px_6px_-1px_rgba(36,36,36,0.04)] items-center">
+<img class="w-20 h-20 rounded-lg object-cover shrink-0" data-alt="Golden crisp french fries dusted with freshly grated parmesan cheese, minced herbs, truffle oil gloss, served in a rustic warm bowl with creamy roasted garlic aioli dip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF1ri-qaLGdIAX1z4j9GOkAkP0m4DuTu86cWgXuWICwBR178ACCdiQdVh8gxepnB8cZEwPTUk1ybeg80dWyfKOIPpRil_WivpzUl5ZTVKggwhCPCV6gGZhTntaW28qqGQvbHPI9Za7_Lyw2EZCpaimyohgGDIzPdQx3_h8mDZT7kFU-ndKDS9kZ-eutQyE5GHGQ7XYjL1lVg9vQ2g13GW4lkURZ7VuiS4qsplwzoR5"/>
+<div class="flex flex-col flex-1 min-w-0 justify-between h-full py-0.5">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Crispy Truffle Fries</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Large size, Garlic Aioli</p>
+</div>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface-variant hover:text-error transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px]">delete_outline</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$5.50</span>
+<!-- Pill Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-full px-1 py-0.5">
+<button class="w-7 h-7 rounded-full flex items-center justify-center text-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-6 text-center font-label-md text-label-md text-on-surface font-bold">1</span>
+<button class="w-7 h-7 rounded-full flex items-center justify-center text-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3: Craft Vanilla Bean Shake -->
+<div class="cart-item bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-[0_4px_20px_-2px_rgba(244,123,53,0.08),0_2px_6px_-1px_rgba(36,36,36,0.04)] items-center">
+<img class="w-20 h-20 rounded-lg object-cover shrink-0" data-alt="Chilled creamy artisanal Madagascar vanilla milkshake topped with whipped cream swirl, dusted with real ground vanilla bean flecks in a frosted glass tumbler, bright appetizing setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh3vJasuiVtzNLJITIDCqkCUQHC7uoUPWoDjYhfYp8teQX4yeXYJd2CkamkfmDUec2PZOuOOKNC4CaMaj5LBeXcVAS-hdIHzLlnK__3yLy_LZY8biz1x0tBZsNn5XkPvJPqcL1EXgDZm0_2JyhPOQNk5HiAg1bRBu3NUpV8i8jSHg3ZUfHgUv56x1c4ckLqKuSSSjvnX4hz9n8KYqx06npnSAeOu1J6RiMrQ0H71Wm"/>
+<div class="flex flex-col flex-1 min-w-0 justify-between h-full py-0.5">
+<div class="flex items-start justify-between gap-1">
+<div class="min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Vanilla Bean Shake</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Regular size</p>
+</div>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface-variant hover:text-error transition-colors shrink-0">
+<span class="material-symbols-outlined text-[18px]">delete_outline</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$4.50</span>
+<!-- Pill Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-full px-1 py-0.5">
+<button class="w-7 h-7 rounded-full flex items-center justify-center text-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-6 text-center font-label-md text-label-md text-on-surface font-bold">1</span>
+<button class="w-7 h-7 rounded-full flex items-center justify-center text-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Promo Code Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_20px_-2px_rgba(244,123,53,0.08),0_2px_6px_-1px_rgba(36,36,36,0.04)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary-container">local_offer</span>
+        Vouchers &amp; Offers
+      </span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">1 Applied</span>
+</div>
+<!-- Active Promo Tag Pill -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-lg p-2.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold tracking-wide text-on-surface">FOODIE30</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">-30% OFF</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Saved $10.79 on this order!</span>
+</div>
+</div>
+<button class="text-error font-label-sm text-label-sm font-bold px-2 py-1 rounded hover:bg-error-container/40 transition-colors">
+        Remove
+      </button>
+</div>
+</div>
+<!-- Order Cost Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_20px_-2px_rgba(244,123,53,0.08),0_2px_6px_-1px_rgba(36,36,36,0.04)] flex flex-col gap-2.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Order Summary</h3>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span class="text-on-surface font-medium">$35.98</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span>Delivery Fee</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">info</span>
+</div>
+<span class="text-on-surface font-medium">$2.49</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span>Service &amp; Taxes</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">info</span>
+</div>
+<span class="text-on-surface font-medium">$2.85</span>
+</div>
+<div class="flex items-center justify-between font-body-md text-body-md text-tertiary">
+<span class="font-medium">Discount (FOODIE30)</span>
+<span class="font-semibold">-$10.79</span>
+</div>
+<!-- Soft Divider via Surface Color Shift -->
+<div class="w-full h-px bg-surface-container-highest my-1"></div>
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Total Amount</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Including VAT &amp; service fees</span>
+</div>
+<span class="font-headline-xl-mobile text-headline-xl-mobile font-extrabold text-primary-container">$30.53</span>
+</div>
+</div>
+<!-- Delivery Instructions Note -->
+<div class="flex items-center gap-2 px-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary-container">format_image_left</span>
+<span class="font-body-sm text-body-sm">Contactless drop-off available at checkout</span>
+</div>
+<!-- Sticky Bottom Checkout CTA Action -->
+<div class="sticky bottom-0 pt-2 pb-1 bg-gradient-to-t from-surface via-surface/95 to-transparent">
+<button class="w-full h-[52px] rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-between px-space-lg shadow-[0_6px_16px_rgba(244,123,53,0.3)] active:scale-[0.98] transition-all hover:bg-primary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>Proceed to Checkout</span>
+</div>
+<div class="flex items-center gap-1">
+<span>$30.53</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</button>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for tactile responsiveness
+  document.querySelectorAll('.cart-item').forEach(item => {
+    const buttons = item.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    });
+  });
+
+  const clearBtn = document.getElementById('clearCartBtn');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      clearBtn.classList.add('scale-95');
+      setTimeout(() => clearBtn.classList.remove('scale-95'), 150);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_-2px_rgba(244,123,53,0.08)]" data-active-classes="text-primary-container font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="restaurants" href="#"><span class="material-symbols-outlined text-[24px]">restaurant</span><span class="font-label-sm text-label-sm">Eats</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 transition-colors relative text-primary-container font-bold" data-path="cart" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-2 min-w-[16px] h-4 px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></div><span class="font-label-sm text-label-sm">Cart</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm">Orders</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

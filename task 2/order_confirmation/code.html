@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#6bff8f", "on-primary-fixed-variant": "#793100", "outline-variant": "#dec0b3", "tertiary-container": "#00b552", "surface": "#fcf9f8", "secondary-fixed": "#ffddb5", "primary-fixed-dim": "#ffb692", "on-error-container": "#93000a", "surface-container": "#f0eded", "background": "#fcf9f8", "surface-container-high": "#eae7e7", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#4ae176", "on-secondary-fixed-variant": "#643f00", "primary": "#9f4200", "error": "#ba1a1a", "inverse-surface": "#303030", "tertiary": "#006e2f", "on-tertiary-fixed": "#002109", "on-surface-variant": "#574238", "on-tertiary-fixed-variant": "#005321", "surface-bright": "#fcf9f8", "on-primary": "#ffffff", "surface-tint": "#9f4200", "on-primary-container": "#5c2300", "surface-container-highest": "#e4e2e1", "inverse-primary": "#ffb692", "surface-container-low": "#f6f3f2", "outline": "#8b7267", "on-primary-fixed": "#341100", "secondary-container": "#fdae37", "error-container": "#ffdad6", "surface-dim": "#dcd9d9", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f3f0ef", "surface-variant": "#e4e2e1", "on-surface": "#1b1c1c", "on-secondary-container": "#6c4400", "secondary": "#845400", "primary-fixed": "#ffdbcb", "on-tertiary": "#ffffff", "on-secondary-fixed": "#2a1800", "primary-container": "#f47b35", "on-tertiary-container": "#003e17", "secondary-fixed-dim": "#ffb958", "on-background": "#1b1c1c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "label-sm": ["10px", { "lineHeight": "12px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fcf9f8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full flex items-center justify-between px-margin pt-safe h-6 text-on-surface select-none"><span class="font-label-md text-label-md tracking-tight font-semibold">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><img alt="FoodieGo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBI19zoxW4ZXt-At0FBPz5Imwzf86vCVeRPB3c6gKlK70TVRo9EzZP8gJQ00j-71pDXFniFO64Zxm7UWwVPB_oEspSvU4Qdp3XP6rsxTmabriqCEFtijlasYqFPjJ9nf0s2qh_lJX0nd4SptSk0wYJ6gAJnl4H4EID11lM1-aNJe0rpJlyVUBAes7cCV-631XsTf0MqDurqSQP1hEt8pPQ_rM-nAt_EIoZuM2z2EGtp1Q"/><h1 class="font-headline-sm text-headline-sm font-bold text-on-surface">Live Order Tracking</h1></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 rounded-full flex items-center justify-center shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNlMr1RTTMDOKkCJyHeyzMI7l1VmZHKR0UTzD2jUzkeg0NJHQQiM2U73eVthzrmhIQp7R6pOKLyxt_75bKjFRckI5V5z_v87WiJWmFCClvY6OKqdq7K14VL0ckF06wRai98o3dQtZ0z9uHkkfSH61rmZsAH_rHRnMNupNEml3fvMAXFQ6KYiUfuRgrfIMkeW84kWitbdlxChyPVJ__-77RFDrKOtJy5WQtdetOSk0K"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl space-y-space-lg">
+<!-- Confetti Canvas overlay -->
+<div class="relative flex flex-col items-center justify-center pt-space-md text-center">
+<!-- Animated Badge Container -->
+<div class="relative w-24 h-24 mb-space-md flex items-center justify-center">
+<!-- Glow & Ripples -->
+<div class="absolute inset-0 rounded-full bg-primary-container/20 animate-ping opacity-75"></div>
+<div class="absolute -inset-2 rounded-full bg-secondary-fixed/40 blur-md"></div>
+<!-- Central Checkmark Badge -->
+<div class="relative w-20 h-20 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg shadow-primary-container/30 transform transition-transform duration-500 hover:scale-105">
+<span class="material-symbols-outlined text-[44px]" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<!-- Festive floating sparkles/confetti -->
+<div class="absolute -top-1 -right-1 text-secondary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+</div>
+<div class="absolute top-1/2 -left-3 text-primary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="absolute -bottom-1 right-2 text-tertiary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<!-- Celebratory Headlines -->
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile font-extrabold text-on-surface tracking-tight">Order Confirmed!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[320px] mt-space-xs leading-relaxed">
+      Thank you for your order! <span class="font-semibold text-on-surface">The Burger Barn</span> has received your ticket and started cooking.
+    </p>
+</div>
+<!-- Hero Card: Estimated Arrival & Interactive Stepper -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_24px_-2px_rgba(244,123,53,0.1)] flex flex-col space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high/60">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Estimated Delivery</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-lg text-headline-lg font-extrabold text-primary">25 - 35</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">min</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-secondary-fixed/50 px-space-sm py-1.5 rounded-full text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span class="font-label-md text-label-md font-semibold">10:15 AM</span>
+</div>
+</div>
+<!-- Stepper Tracker -->
+<div class="py-1">
+<div class="relative flex items-center justify-between">
+<!-- Connecting Line Base -->
+<div class="absolute left-4 right-4 top-1/2 -translate-y-1/2 h-1 bg-surface-container-highest -z-0"></div>
+<!-- Progress Active Line (Step 1 to 2) -->
+<div class="absolute left-4 w-1/3 top-1/2 -translate-y-1/2 h-1 bg-primary-container -z-0"></div>
+<!-- Step 1: Placed -->
+<div class="flex flex-col items-center space-y-1.5 z-10">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px] font-bold">check</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">Placed</span>
+</div>
+<!-- Step 2: Kitchen (Pulsing Active) -->
+<div class="flex flex-col items-center space-y-1.5 z-10">
+<div class="relative flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center ring-4 ring-primary-container/20 shadow-sm">
+<span class="material-symbols-outlined text-[18px] animate-spin" style="animation-duration: 4s;">skillet</span>
+</div>
+<span class="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-container"></span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Kitchen</span>
+</div>
+<!-- Step 3: On The Way -->
+<div class="flex flex-col items-center space-y-1.5 z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">two_wheeler</span>
+</div>
+<span class="font-label-sm text-label-sm font-medium text-on-surface-variant">On Way</span>
+</div>
+<!-- Step 4: Delivered -->
+<div class="flex flex-col items-center space-y-1.5 z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">home</span>
+</div>
+<span class="font-label-sm text-label-sm font-medium text-on-surface-variant">Arrived</span>
+</div>
+</div>
+</div>
+<!-- Active Step Message Pill -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-sm py-2 rounded-xl">
+<span class="material-symbols-outlined text-primary text-[20px]">restaurant</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+        Chef is crafting your smashburger with extra love!
+      </p>
+</div>
+</div>
+<!-- Live Courier & Order Information Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_-2px_rgba(36,36,36,0.04)] space-y-space-md">
+<!-- Header with Copy ID -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Order ID:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface tracking-wide" id="orderIdText">#FG-89241</span>
+</div>
+<button class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg hover:bg-surface-container-high transition-colors" id="copyBtn" onclick="navigator.clipboard?.writeText('#FG-89241'); this.innerHTML='&lt;span class=\'material-symbols-outlined text-[16px] text-tertiary\'&gt;done&lt;/span&gt;&lt;span class=\'font-label-sm text-label-sm font-bold text-tertiary\'&gt;Copied&lt;/span&gt;';">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">content_copy</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant">Copy</span>
+</button>
+</div>
+<!-- Courier Info Row -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-13 h-13 rounded-full object-cover ring-2 ring-primary-container/30" data-alt="Warm and friendly delivery driver portrait with welcoming smile, wearing an orange cap and warm jacket, lit with bright daytime golden light, ultra-realistic close-up." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMB8Bc0zjoZGRzIvUhFuReiHqDQG2XsT0EEVRojMZjSeP42oeD_5RQ7r2-hwq2ODuZxRQoJz3YtbH1_tGRexsFqSjdybewDvfa-t-KlmYWn_DL36S37lwe4tOHo_EEBna6W4ZQ1ibq7Ub2zRP-WZIXI9OgGOoGHFB443xojsZCq24ZLhkjcgIQRItWCdwLH_1yWvx6qBAUc_xCIxU2R-S4pWUWCZzfNPkRxdpeO0a6"/>
+<div class="absolute -bottom-1 -right-1 bg-surface-container-lowest p-0.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">two_wheeler</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Carlos M.</h3>
+<span class="inline-flex items-center gap-0.5 text-secondary font-label-sm text-label-sm font-bold bg-secondary-fixed/50 px-1.5 py-0.2 rounded">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              4.9
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Honda Scooter • Red (Plate: 4KY9)</p>
+</div>
+</div>
+</div>
+<!-- Quick Driver Action Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<a class="h-11 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-center gap-space-xs text-on-surface font-label-md text-label-md font-semibold transition-all" href="tel:5550199">
+<span class="material-symbols-outlined text-[18px] text-primary">call</span>
+<span>Call Driver</span>
+</a>
+<button class="h-11 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-center gap-space-xs text-on-surface font-label-md text-label-md font-semibold transition-all">
+<span class="material-symbols-outlined text-[18px] text-primary">chat_bubble</span>
+<span>Send Message</span>
+</button>
+</div>
+</div>
+<!-- Delivery Destination Summary Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_-2px_rgba(36,36,36,0.04)] flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Delivering To</span>
+<p class="font-body-md text-body-md font-bold text-on-surface truncate mt-0.5">24 Maple Avenue, Apt 4B</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Leave at front door with doorman</p>
+</div>
+</div>
+<!-- Order Items Preview Banner (Delight touch) -->
+<div class="w-full bg-surface-container-low rounded-2xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-lg object-cover" data-alt="Artisanal smash burger with melted cheddar cheese, crisp lettuce, brioche bun, and crispy golden seasoned French fries on rustic paper, studio food photography, warm soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6g5zKkO-q7wEBGqwyga7Bk00sYDOMapQwHwH7nFWigVTWNEh_l4zDUvErqVpvy06ntRv4qm6XbOm_8WbqjS4gYSVcJ9c64kNuSvbY44J7yRB9uPbPTS38Jlxye9C4AZPOaz_i0jo_UKeVPNyBGjHqqSsGaH9Za87CbNf0WvLhcckIcnHabae-56IBbL3QtJzgRG-mLBhaNmh68J-yo4jfHM8q7vwGlzz5i7eKoQ_4"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">2x The Classic Smash + Fries</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total: $28.40 (Paid via Apple Pay)</span>
+</div>
+</div>
+<button class="text-primary font-label-md text-label-md font-bold flex items-center">
+      Receipt
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Primary Bottom Actions -->
+<div class="flex flex-col space-y-space-sm pt-space-xs">
+<!-- Primary CTA: Track on Map -->
+<button class="w-full h-13 rounded-2xl bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-sm shadow-[0_6px_20px_rgba(244,123,53,0.35)] hover:opacity-95 active:scale-[0.99] transition-all">
+<span class="material-symbols-outlined text-[22px]">explore</span>
+<span>Track on Live Map</span>
+</button>
+<!-- Secondary CTA: Back to Home -->
+<button class="w-full h-12 rounded-2xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center hover:bg-surface-container transition-colors" onclick="window.history.back()">
+<span>Back to Home</span>
+</button>
+</div>
+</div></main></body></html>
