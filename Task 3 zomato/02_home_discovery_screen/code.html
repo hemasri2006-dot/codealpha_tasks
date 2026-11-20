@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface-container-high': '#eae7e7', 'on-primary-fixed': '#410007', 'on-error': '#ffffff', 'on-error-container': '#93000a', 'surface-container-highest': '#e4e2e1', 'background': '#fcf9f8', 'primary-fixed': '#ffdad8', 'on-secondary-container': '#696363', 'on-surface-variant': '#5b403f', 'on-tertiary-fixed': '#002109', 'tertiary-fixed-dim': '#82da8f', 'primary': '#b7122a', 'surface-dim': '#dcd9d9', 'error': '#ba1a1a', 'surface-variant': '#e4e2e1', 'secondary': '#635d5d', 'on-tertiary-fixed-variant': '#005320', 'primary-container': '#db313f', 'secondary-container': '#eae0e0', 'on-surface': '#1b1c1c', 'tertiary': '#076b2d', 'secondary-fixed-dim': '#cdc4c4', 'inverse-primary': '#ffb3b1', 'on-secondary-fixed': '#1f1b1b', 'tertiary-container': '#2e8444', 'outline-variant': '#e4bebc', 'surface-container-low': '#f6f3f2', 'surface-bright': '#fcf9f8', 'error-container': '#ffdad6', 'on-primary-container': '#fffbff', 'on-secondary-fixed-variant': '#4b4546', 'inverse-on-surface': '#f3f0ef', 'inverse-surface': '#303030', 'secondary-fixed': '#eae0e0', 'primary-fixed-dim': '#ffb3b1', 'on-tertiary': '#ffffff', 'outline': '#8f6f6e', 'tertiary-fixed': '#9ef6a9', 'on-background': '#1b1c1c', 'surface': '#fcf9f8', 'on-tertiary-container': '#f7fff2', 'surface-tint': '#bb162c', 'surface-container-lowest': '#ffffff', 'on-primary-fixed-variant': '#92001c', 'on-secondary': '#ffffff', 'on-primary': '#ffffff', 'surface-container': '#f0eded' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'margin': '1rem', 'gutter': '1rem', 'margin-mobile': '1rem', 'space-xs': '0.25rem', 'space-lg': '1.5rem', 'gutter-mobile': '0.75rem', 'space-md': '1rem', 'space-xl': '2rem', 'space-sm': '0.5rem' }, fontFamily: { 'body-sm': ['Inter'], 'display-lg': ['Inter'], 'headline-xl': ['Inter'], 'title-sm': ['Inter'], 'label-sm': ['Inter'], 'headline-md': ['Inter'], 'label-md': ['Inter'], 'headline-lg': ['Inter'], 'body-lg': ['Inter'], 'body-md': ['Inter'], 'label-lg': ['Inter'] }, fontSize: { 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.03em', fontWeight: '800' }], 'headline-xl': ['28px', { lineHeight: '34px', letterSpacing: '-0.02em', fontWeight: '700' }], 'title-sm': ['16px', { lineHeight: '22px', letterSpacing: '-0.005em', fontWeight: '600' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.02em', fontWeight: '700' }], 'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.01em', fontWeight: '600' }], 'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.015em', fontWeight: '700' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.01em', fontWeight: '600' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Zomato Brand Mark" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQM4FV79yC1BSWNM1URRzSQ4Kvur0KwgoMthDBCFzQYtusrsfdXGgwzon95YGx558T9h8GziiI8rKonwkgb7xcEs3hMgBGGx2JVkgEKCo2Yjzr0D8xW8ZMezRow6bpR_d7qAyMRy3yyGKGYaWQ3UYYN61GQ77xHeZt0EysXzWru44I5JviziCblzkB6tX6Cz4KtfS2zqwarbV6kRJhbMU2Y3KZ9RtDSzJ59eRYduon"/><div class="flex items-center gap-1 min-w-0 max-w-[200px] bg-surface-container-low px-2.5 py-1 rounded-full text-on-surface"><span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0">location_on</span><span class="font-label-md text-label-md truncate text-on-surface font-semibold">Indiranagar, Bengaluru</span><span class="material-symbols-outlined text-on-surface-variant text-[16px] flex-shrink-0">expand_more</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Top Bar Context & Dietary Filter -->
+<div class="px-margin pt-space-xs pb-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 min-w-0 flex-1">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+          DELIVER TO
+          <span class="material-symbols-outlined text-[12px] text-primary">bolt</span>
+</span>
+<button aria-label="Select delivery address" class="flex items-center gap-1 text-left min-w-0 active:scale-95 transition-transform">
+<span class="font-headline-md text-headline-md text-on-surface font-bold truncate">Indiranagar, 12th Main</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant flex-shrink-0">keyboard_arrow_down</span>
+</button>
+</div>
+</div>
+<!-- Veg Only Interactive Switch -->
+<div class="flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-full flex-shrink-0 shadow-sm">
+<div class="w-3.5 h-3.5 rounded-sm bg-tertiary/15 flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium select-none">Veg</span>
+<button aria-checked="false" aria-label="Vegetarian only mode" class="w-8 h-4 rounded-full bg-surface-container-highest relative transition-colors duration-200 focus:outline-none" id="veg-toggle" onclick="toggleVegMode()" role="switch">
+<span class="absolute left-0.5 top-0.5 w-3 h-3 rounded-full bg-surface-container-lowest shadow-sm transition-transform duration-200" id="veg-toggle-knob"></span>
+</button>
+</div>
+</div>
+<!-- Smart Search Bar -->
+<div class="px-margin mb-space-md">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest rounded-xl p-2.5 shadow-[0_4px_16px_rgba(0,0,0,0.04)]">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0 pl-1">search</span>
+<div class="flex-1 min-w-0">
+<div class="font-body-md text-body-md text-on-surface-variant truncate" id="search-ticker">
+          Search <span class="text-on-surface font-medium">"dum biryani"</span>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Voice Search" class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<div class="w-px h-5 bg-surface-container-highest"></div>
+<button aria-label="Filters" class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Story / Curated Highlights Horizontal Row -->
+<div class="w-full mb-space-lg overflow-x-auto no-scrollbar pl-margin">
+<div class="flex items-center gap-3.5 pr-margin">
+<!-- Highlight 1: Flash Offers -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group active:scale-95 transition-transform" onclick="triggerHighlight(this)">
+<div class="relative p-0.5 rounded-full bg-gradient-to-tr from-primary to-primary-container">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container-lowest p-0.5">
+<img class="w-full h-full object-cover rounded-full" data-alt="Vibrant top-down photo of sizzling tandoori chicken tikka skewers on charcoal grill with mint chutney dip, warm ambient light, high dynamic range food photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkQww5DkHnx5vu24MKwlXc1V-dETKe6bqeKl2UQcCJu18jHcVCDnEcpm0SEEQ9dqNAl4V3E8Q93_7EESzTWA3Qo6TcF27vGMYWr8M03zM0X90pT022WwjUwKUOgNnWPkGPTwwWhjvC_WAnpkhj0IhkV5xuyeikIPE2qIqzBq9H_3EXxa6ZUFjwDRNuS77sdKxvozSMJmQri0Y_tOZSLPODfASfgoE8y0xmGsQ0gmnp"/>
+</div>
+<span class="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-primary text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full uppercase tracking-tighter whitespace-nowrap shadow-sm">50% OFF</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center w-16 truncate">Flash Deals</span>
+</button>
+<!-- Highlight 2: Healthy Eats -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group active:scale-95 transition-transform" onclick="triggerHighlight(this)">
+<div class="relative p-0.5 rounded-full bg-surface-container-highest">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container-lowest p-0.5">
+<img class="w-full h-full object-cover rounded-full" data-alt="Overhead shot of colourful wholesome organic salad bowl with sliced avocado, quinoa, pomegranate seeds, baby spinach, vibrant natural light studio food photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW7XexGP72Qb3Kip4bvEXorSc93Yc1LubQwotlGwywDhhZUrtdGODdsH6mdaJHfTfzKZzkWEE47-pR25CBkkPTdIa7ioGAYAKJ0FrSjW7wRMsOmIMWpAWrcdiRSpPcumwjBYFcqe7-hRAtx7SYszVu1v6dw9ZgZt2GszGcjXduqok754SL4dyWBMy4dJniOZ-HPHjbbj3HzTAqy3mrpQkbootPL0BuFiiT7UA-O83I"/>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center w-16 truncate">Healthy Eats</span>
+</button>
+<!-- Highlight 3: Gourmet -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group active:scale-95 transition-transform" onclick="triggerHighlight(this)">
+<div class="relative p-0.5 rounded-full bg-surface-container-highest">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container-lowest p-0.5">
+<img class="w-full h-full object-cover rounded-full" data-alt="Michelin star gourmet plated dish with delicate microgreens, truffle drizzle, and artisanal plating on dark slate ceramic plate, moody cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNb0wHfdHP-LWlBHo8GcGqO6lG0Xq4rwlAF6wREOWSpHkDG3La_6DQdvmdCkbJ_YlmcryDikwpMhsGqstTVPqzsa2BcnI6ZcDdbRakbUx2nzk_hHVTAHuTv2eE7ciqTMzoypGMxl6rRct34MTg0tIKBBb6AXzOtim4nQpOzAsL-RkH7GrbLs5kSntx-ddZ9j_vzfjmn0MgYmr3n3uOUrHgdTyedQszz8eGYVBD3Vrs"/>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center w-16 truncate">Gourmet</span>
+</button>
+<!-- Highlight 4: Top Rated 4.5+ -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group active:scale-95 transition-transform" onclick="triggerHighlight(this)">
+<div class="relative p-0.5 rounded-full bg-surface-container-highest">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container-lowest p-0.5">
+<img class="w-full h-full object-cover rounded-full" data-alt="Golden crisp woodfired pizza with melting burrata cheese and fresh basil leaves, macro appetizing food shot with subtle steam rising" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMWYdjOfQam1b4Gc5JD_H9CL6WJFXg3i1HQ4iuIFv3LdpWaBlexRVKSaCMyAjfmILMe3oI_wtr_3LzllLYT1t7UP717KJPwwfXsIvNBNMpsm2GWKpSM6cAymu5RURFODkiFYGbLRj_zCWT0n2R6cGeMC478-kIxX1XHTN4NUfb4VQ5LzenlSVfDtCEMHZ2XI6o-apm-LEQ8FgEKFRs9szL0nwf4KE2IRz2j-Mqg3t9"/>
+</div>
+<span class="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-tertiary text-on-tertiary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold whitespace-nowrap shadow-sm">4.5★</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center w-16 truncate">Top Rated</span>
+</button>
+<!-- Highlight 5: Midnight Cravings -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group active:scale-95 transition-transform" onclick="triggerHighlight(this)">
+<div class="relative p-0.5 rounded-full bg-surface-container-highest">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container-lowest p-0.5">
+<img class="w-full h-full object-cover rounded-full" data-alt="Juicy double cheeseburger with melting cheddar cheese sauce, crisp bacon and caramelized onions on toasted brioche bun, moody warm night-time food photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD11GDH3CqN5J-9d0YMwMsZlbafgcaRlSLdBTa-ADtgk2BMwiYLltGZPKSGfXqSWIw_QvU8Jg6sI00cx2CI9fuYUzwsaJ7wZhM1wgMesUaZu6Trg5jRhsAZ8mYLQPphGeMwk_mzqXojxn3eDt4nLmTVF7Z6jLmM1mkgtISnGldRhwjPEnsc3X1yBFpLoFKl0fuU0ohBs_91q7wuNF3VIzqZ4tDZ8DE4vxAMOM1B1Vuf"/>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center w-16 truncate">Midnight</span>
+</button>
+</div>
+</div>
+<!-- Curated Banners Carousel (Guaranteed 30-min Delivery) -->
+<div class="px-margin mb-space-lg">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-on-primary-fixed to-primary text-on-primary shadow-md p-4 min-h-[140px] flex items-center justify-between">
+<div class="flex-1 pr-3 z-10">
+<div class="inline-flex items-center gap-1 bg-surface-container-lowest/20 backdrop-blur-md px-2 py-0.5 rounded-full mb-2">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">timer</span>
+<span class="font-label-sm text-label-sm text-on-primary font-bold tracking-wide uppercase">30-Min Delivery</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold leading-tight mb-1 text-on-primary">
+          Fast &amp; Piping Hot
+        </h3>
+<p class="font-body-sm text-body-sm text-primary-fixed mb-3 opacity-95">
+          Use code <span class="font-bold underline decoration-white/50">ALPHA40</span> for 40% OFF
+        </p>
+<button class="bg-surface-container-lowest text-primary font-label-md text-label-md px-3.5 py-1.5 rounded-lg font-bold shadow-sm active:scale-95 transition-transform">
+          Order Fast
+        </button>
+</div>
+<div class="w-32 h-32 flex-shrink-0 relative">
+<div class="w-full h-full rounded-xl overflow-hidden shadow-lg transform rotate-3">
+<img class="w-full h-full object-cover" data-alt="Plate of steaming handmade Italian tagliatelle pasta with glossy tomato basil marinara sauce and shaved parmesan, warm rustic Italian kitchen aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPblJtWOhsVeV0kuVBzpa2OQ33_gr3EQRV2NiTutJMB6nmV5NpXCZuLPfvXX2pRStdasvv0kZ14JlLKBU3duVzPPCg8E3izvIAhXVdwtekenFD33AZj4YWi4WztMgj-Wmo-vIMSrN_JWAYryyQO29E-HaRyatwZRbuhtYt14PKLE5to3qyShqocnL-d_7fV8a-AaaVDpMPCAO6LapOGNV7I8WEWYX8SQwLxavdV2Bu"/>
+</div>
+</div>
+<!-- Background decorative glow -->
+<div class="absolute -right-8 -bottom-8 w-40 h-40 bg-primary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+</div>
+</div>
+<!-- Cuisines Grid (2x4 icons) -->
+<div class="px-margin mb-space-lg">
+<div class="flex items-center justify-between mb-3">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Explore Cuisines</h2>
+<span class="font-label-md text-label-md text-primary font-semibold cursor-pointer">See all</span>
+</div>
+<div class="grid grid-cols-4 gap-2.5">
+<!-- Biryani -->
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-surface-container-lowest shadow-sm active:scale-95 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Fragrant Indian basmati mutton dum biryani garnished with fried onions and mint leaves, close-up top-view culinary photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgnauRlwufxCJnMQoiWZ1kNaKyzmsyxgcT1mBQup5QAv85uobwgKlkQmO7q9ltnYn9__N1pSCPe-SkzMHcWCvmavh0EMO4hln1XL5iBAi-n83HtvhzUwXgKrYWCzXQeP_kA8UQ3Ze92cfO6sLB6MoVfcyH2UJgzN86Ucl3VX_CVB5i3WiConeec0adEZH3N-EJXoIgCXDoBTBpx6aOzHnOSJnriK00tUR36NyUjBgT"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center truncate w-full">Biryani</span>
+</div>
+<!-- Pizza -->
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-surface-container-lowest shadow-sm active:scale-95 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Crispy slice of pepperoni pizza pulling gooey stringy mozzarella cheese, vibrant studio food photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg0GNxmdhSencgOiL3VK_q0FLxK6QCuglCEHnCNm0SQ_9-vw0VmotQRMtkQKP3M5B-GmF1pErRiYIlArVMKqNiJmIcR4lBsJdH6ZkjlBdbBfxTxRvTu5fnb_p0LrkxvBVOQMHPYZSZuq8xboMt12etfmXHRT30bDAjr8pJfZpwJ9o8-TOw17G3l-u1_jkOqV8tW6BU072zLgj8eoVVVHUsIAxeZWRju4PGSLHvVTWd"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center truncate w-full">Pizza</span>
+</div>
+<!-- North Indian -->
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-surface-container-lowest shadow-sm active:scale-95 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Copper handi bowl of rich butter chicken curry served beside garlic butter naan bread, authentic Indian restaurant presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRxXuE63-Y1J6_a4AtDUeZXFCLvp7IuzQEVazPjozI9cjx-J8gmaNDlOd3IlFKmAF8ZMUxlU3aC1_AwHKlbauX_9y24kZdZQbro0F6kSKr6CxS0_AfBZB4XUfVTTzqt1QmPQsTtKPVwvp01Dk4Mt5UfS1quSidu2u7VBhpwizPVbsw5moUDbJjkfFeMr7tj3SZR9eXWlZ3zJJtGBCibm6bXx_5M9PZrQMmoJG3BTN3"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center truncate w-full">North Indian</span>
+</div>
+<!-- Burgers -->
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-surface-container-lowest shadow-sm active:scale-95 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Towering smashed patty beef burger with melted American cheese and crispy onion rings in a soft brioche bun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnCNi6EcMWa1CdTcM7DPw6Qr-deBvjAqFTlvCCNTohtbSqMJfnRuHYp4UyPZKMMdi_LHU-fKYg4PvmrptArwJts2WYLJM2ArK_fHrs4EkG9MrdWgRCDcQxA5-V3oI_eq3cnJRUY9CNTGNXvA6ImcHOXZI5UuicbB-MFvq5nSDgrJ2uy9v6gElK5QDbtziQQOxcj_Lr3rPCDflmGH6Ng0sI870WZhZ7hmAzjtMd9pEW"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center truncate w-full">Burgers</span>
+</div>
+<!-- Chinese -->
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-surface-container-lowest shadow-sm active:scale-95 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Glossy spicy chili garlic Hakka noodles being lifted by chopsticks from a black wok bowl, culinary food shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg10SLwaXWFKRJbTSnyfoMFHdsGzOh3_ZjPsgNeA80PhZW4WfTzpRjnuwXpJMovggGl2ZJMzLV9J85gNrDU5vka0jfYMDHcFyMDrppov3l4HkJFXhJ3JCwdFlr3pi4E-qGVWP58SPTETUqciZuIWAs3XieM08MxTy4CNaOqGc1-tIFIwPytbZc4ZFc92pXzUBveeKG7-hj_GtbJiLxw6nOBMzZruQ8jML6b7TZ-kco"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center truncate w-full">Chinese</span>
+</div>
+<!-- Desserts -->
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-surface-container-lowest shadow-sm active:scale-95 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Decadent molten chocolate lava cake with dripping warm ganache center and fresh red raspberries, pastry studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3xV-J7niQHM8vGgLrW2rgaRzn9IaGfrzCG7OcmKU7vJykJhXTCSWJvHv2OKQdP5kUsgvWg-HD03jj0acbLc41mpS4mXdKE-RBsRRF6mQ1mE9LjVPySejv2I8sCyx4AaFHAXjoNJlx5vyn52byt9vOCVmwSs9BzOr-sLSw9MfMFNrw7wwHR2ma9lsgbELsPPbH810IyyWdQPTEor_L5nNBhTk3MrZ2TXJJJZt23GzF"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center truncate w-full">Desserts</span>
+</div>
+<!-- South Indian -->
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-surface-container-lowest shadow-sm active:scale-95 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Paper-thin golden crisp ghee roast masala dosa served with bowls of coconut chutney and steaming spicy sambar on banana leaf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ZlREmLXX__QGegfnzPhB437-nlNUtJZo95rBwSQylP4amzXeKRNVfOc7pmYliPtGg9CH8f32fo7laKtSKihHEaFGkKIit1IYU0oN_f6st65XXUPBCzK_T1bziijawdWu-Fwreqlb7DE5yNPLAY4j8zHxoMcXsk-xzYnE0K0Azf67yDGN9zfOzdMPxfIee6aABU90veCK-QLgcM75P-yeeCo24OwiHrJrcVxcpU4z"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center truncate w-full">South Indian</span>
+</div>
+<!-- Healthy Bowls -->
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-xl bg-surface-container-lowest shadow-sm active:scale-95 transition-transform cursor-pointer">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant tropical acai smoothie bowl decorated with sliced kiwi, banana, chia seeds, and toasted coconut flakes, bright morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMryf2A1Kl09TGhzCqAR-BYmTC9ImNWBbEJPat_hyUq1HwE4YhlrsQ_HLMumXveYgQalZ-Lh7UFAC6KnC8PQeE9tX77o0B7frtqaNv7bKpd8LHqV3Pw9b9TqWS2wg2r25ZfnWjo9hsnuQzzfw3wpxzmAquH7TTssks5bl5L0HYqL-qvYp6Cfveye7vJ1e5B-Gt0O9_RNJco6zydZh3EIk0XHX2e0f80NV6nYnXyZXh"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-center truncate w-full">Healthy</span>
+</div>
+</div>
+</div>
+<!-- Quick Reorder Carousel -->
+<div class="px-margin mb-space-lg">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">history</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Past Favorites</h2>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant font-medium ml-auto">1-Tap Order</span>
+</div>
+<!-- Reorder Card -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-[0_4px_16px_rgba(0,0,0,0.04)] flex items-center justify-between gap-3">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up of signature Meghana Foods spicy Andhra style boneless chicken biryani layered with aromatic golden saffron rice and fresh coriander" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdh1b-daqAcTc25BXU8CIAVZOD8X7eLPmVRPAKVNS9CSORwCfLzKClp18Jr7INumth8rQ18nyr-u4hiMKUQzdc7JVpk20XI5mdCyMKLWMakfzopgg1RVlZCPGhXYZB-Tlhthfh0cyi8lBrQgTBsIDneFknVhhOcqbTjYyFi3gVxJmcNgrJMUlHpzzDydYzv2TPGfX32mnWwRJIL2Cw3IEJ16ECx5PKLDqELR75vtae"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-error/15 flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium truncate">Meghana Foods</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Special Boneless Biryani</h4>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">₹340</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹380</span>
+</div>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-xl font-bold flex items-center gap-1 shadow-sm active:scale-95 transition-transform flex-shrink-0" onclick="handleReorder(this)">
+<span class="material-symbols-outlined text-[16px]">repeat</span>
+        Reorder
+      </button>
+</div>
+</div>
+<!-- Recommended Restaurants Near You Header with Sort Pills -->
+<div class="px-margin mb-3">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Recommended For You</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Top curated spots around Indiranagar</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">34 places</span>
+</div>
+<!-- Sort & Filter Pills Horizontal Carousel -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-margin px-margin">
+<button class="flex items-center gap-1 bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm font-label-md text-label-md text-on-surface font-semibold flex-shrink-0 active:scale-95 transition-transform">
+<span>Relevance</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="flex items-center gap-1 bg-surface-container px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface font-medium flex-shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-tertiary">star</span>
+<span>Rating 4.0+</span>
+</button>
+<button class="flex items-center gap-1 bg-surface-container px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface font-medium flex-shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">schedule</span>
+<span>Under 30 mins</span>
+</button>
+<button class="flex items-center gap-1 bg-surface-container px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface font-medium flex-shrink-0 active:scale-95 transition-transform">
+<span>Great Offers</span>
+</button>
+</div>
+</div>
+<!-- Rich Restaurant Cards Stream -->
+<div class="px-margin flex flex-col gap-space-lg">
+<!-- Restaurant Card 1: Truffles -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.04)] flex flex-col cursor-pointer active:scale-[0.99] transition-transform">
+<!-- Media Header -->
+<div class="relative w-full h-48 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Gourmet American burger loaded with bacon, cheddar cheese, crisp french fries and creamy thick chocolate milkshake beside it on dark table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCg9REhCqYYNQGlU2qqP9_eTzqbBnWBFJGDzEFq--pN9AtxoCYvgHhQ40A2Pn12k4m07m7EtCOCx0Zl9eAdD4kqNin0awz5fahn4i9G4xhQ-CBYZlFC3Q_CJ49PUv1kBX9UiYJKOarrZm03qj8497ONpiD4BV9l5aSyJgPNnpRqXCMp1zzxN1dB2XoxBgkGA4jasWaiLF8l5f_DHhkZFqOEod66n4A-EQMDO1iRDLE"/>
+<!-- Top Overlays -->
+<div class="absolute top-3 left-3 flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md shadow-sm">
+<span class="material-symbols-outlined text-primary text-[14px]">local_offer</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-tight">50% OFF up to ₹100</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-transform" onclick="toggleBookmark(event, this)">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<!-- Bottom Delivery Pill on Image -->
+<div class="absolute bottom-3 right-3 bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm font-semibold">25 mins</span>
+<span class="text-surface-container-highest">•</span>
+<span class="font-label-sm text-label-sm">1.8 km</span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="p-3.5 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface truncate">Truffles</h3>
+<div class="bg-tertiary text-on-tertiary px-2 py-0.5 rounded-md flex items-center gap-0.5 flex-shrink-0 shadow-sm">
+<span class="font-label-md text-label-md font-bold">4.6</span>
+<span class="material-symbols-outlined text-[12px]">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mb-2">
+          American, Burgers, Fast Food, Thick Shakes • ₹350 for two
+        </p>
+<!-- Perks & Badges -->
+<div class="pt-2.5 flex items-center gap-2 bg-surface-container-low/70 -mx-3.5 -mb-3.5 px-3.5 py-2.5 rounded-b-xl">
+<span class="material-symbols-outlined text-tertiary text-[18px]">delivery_dining</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold truncate">Free delivery on orders above ₹199</span>
+</div>
+</div>
+</div>
+<!-- Restaurant Card 2: Meghana Foods -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.04)] flex flex-col cursor-pointer active:scale-[0.99] transition-transform">
+<!-- Media Header -->
+<div class="relative w-full h-48 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional Hyderabadi chicken dum biryani in brass pot with boiled egg, lemon wedge, and spicy salan curry, vibrant colors, authentic restaurant photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuRNhV6G6lhWC4wmo6SK1AqrfSh5AV8YNh6brImGmctFNrkYwf459RCRNRZd9_VGNknlwgtKXgOkrqu1xspEt3s35ZH8G9pBdgCfx11boMDhQWMv_Odq5n8SJi3lpPP1QG8bVd3g1K4ByMqmEFxMeDjNc8QBiyAz26ihS9QITsDuCO6n5NrsniUX5mkVIYNXt2LGrwJ4wYWWxoJDaQfsq_stUhsqVbvvvOj-IrCD-6"/>
+<!-- Top Overlays -->
+<div class="absolute top-3 left-3 flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md shadow-sm">
+<span class="material-symbols-outlined text-primary text-[14px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-tight">Zomato Bestseller</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-90 transition-transform" onclick="toggleBookmark(event, this)">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<!-- Bottom Delivery Pill on Image -->
+<div class="absolute bottom-3 right-3 bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm font-semibold">20 mins</span>
+<span class="text-surface-container-highest">•</span>
+<span class="font-label-sm text-label-sm">2.1 km</span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="p-3.5 flex flex-col">
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface truncate">Meghana Foods</h3>
+<div class="bg-tertiary text-on-tertiary px-2 py-0.5 rounded-md flex items-center gap-0.5 flex-shrink-0 shadow-sm">
+<span class="font-label-md text-label-md font-bold">4.5</span>
+<span class="material-symbols-outlined text-[12px]">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mb-2">
+          Authentic Hyderabadi Biryani, Andhra, North Indian • ₹500 for two
+        </p>
+<!-- Perks & Badges -->
+<div class="pt-2.5 flex items-center gap-2 bg-surface-container-low/70 -mx-3.5 -mb-3.5 px-3.5 py-2.5 rounded-b-xl">
+<span class="material-symbols-outlined text-primary text-[18px]">high_res</span>
+<span class="font-label-sm text-label-sm text-primary font-bold truncate">Flat ₹100 OFF with ZOMATOSTEAL</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Floating Cart SnackBar Indicator -->
+<div class="hidden fixed bottom-20 left-margin right-margin z-40 bg-inverse-surface text-inverse-on-surface p-3.5 rounded-xl shadow-[0_-6px_28px_rgba(0,0,0,0.18)] items-center justify-between" id="cart-toast">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-inverse-on-surface font-bold leading-tight">1 item added</p>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Meghana Foods • ₹340</p>
+</div>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg font-bold flex items-center gap-1 active:scale-95 transition-transform">
+      View Cart
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<script>
+  // Vegetarian Toggle interaction
+  function toggleVegMode() {
+    const btn = document.getElementById('veg-toggle');
+    const knob = document.getElementById('veg-toggle-knob');
+    const isVeg = btn.getAttribute('aria-checked') === 'true';
+
+    if (!isVeg) {
+      btn.setAttribute('aria-checked', 'true');
+      btn.classList.remove('bg-surface-container-highest');
+      btn.classList.add('bg-tertiary');
+      knob.classList.add('translate-x-4');
+    } else {
+      btn.setAttribute('aria-checked', 'false');
+      btn.classList.remove('bg-tertiary');
+      btn.classList.add('bg-surface-container-highest');
+      knob.classList.remove('translate-x-4');
+    }
+  }
+
+  // Story Highlight feedback
+  function triggerHighlight(element) {
+    element.classList.add('scale-95');
+    setTimeout(() => {
+      element.classList.remove('scale-95');
+    }, 150);
+  }
+
+  // Bookmark Toggle
+  function toggleBookmark(event, btn) {
+    event.stopPropagation();
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (icon.textContent === 'bookmark_border') {
+      icon.textContent = 'bookmark';
+      icon.classList.add('text-primary');
+    } else {
+      icon.textContent = 'bookmark_border';
+      icon.classList.remove('text-primary');
+    }
+  }
+
+  // 1-Tap Reorder Action
+  function handleReorder(btn) {
+    btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> Added';
+    btn.classList.remove('bg-primary');
+    btn.classList.add('bg-tertiary');
+
+    const toast = document.getElementById('cart-toast');
+    if (toast) {
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+    }
+
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">repeat</span> Reorder';
+      btn.classList.remove('bg-tertiary');
+      btn.classList.add('bg-primary');
+    }, 2500);
+  }
+
+  // Dynamic Search Prompt Ticker
+  const searchPrompts = [
+    'Search "dum biryani"',
+    'Search "crispy dosa"',
+    'Search "cheesy pizza"',
+    'Search "cold coffee"'
+  ];
+  let searchIdx = 0;
+  const tickerEl = document.getElementById('search-ticker');
+  if (tickerEl) {
+    setInterval(() => {
+      searchIdx = (searchIdx + 1) % searchPrompts.length;
+      tickerEl.style.opacity = '0';
+      setTimeout(() => {
+        tickerEl.innerHTML = searchPrompts[searchIdx];
+        tickerEl.style.opacity = '1';
+      }, 200);
+    }, 3200);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] gap-0.5 transition-colors text-primary font-bold" data-path="delivery" href="#"><span class="material-symbols-outlined text-[24px]">moped</span><span class="font-label-sm text-label-sm">Delivery</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors hover:text-on-surface" data-path="dining-out" href="#"><span class="material-symbols-outlined text-[24px]">restaurant</span><span class="font-label-sm text-label-sm">Dining Out</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors hover:text-on-surface" data-path="live-events" href="#"><span class="material-symbols-outlined text-[24px]">confirmation_number</span><span class="font-label-sm text-label-sm">Live Events</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors hover:text-on-surface" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

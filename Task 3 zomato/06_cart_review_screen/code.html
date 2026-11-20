@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface-container-high': '#eae7e7', 'on-primary-fixed': '#410007', 'on-error': '#ffffff', 'on-error-container': '#93000a', 'surface-container-highest': '#e4e2e1', 'background': '#fcf9f8', 'primary-fixed': '#ffdad8', 'on-secondary-container': '#696363', 'on-surface-variant': '#5b403f', 'on-tertiary-fixed': '#002109', 'tertiary-fixed-dim': '#82da8f', 'primary': '#b7122a', 'surface-dim': '#dcd9d9', 'error': '#ba1a1a', 'surface-variant': '#e4e2e1', 'secondary': '#635d5d', 'on-tertiary-fixed-variant': '#005320', 'primary-container': '#db313f', 'secondary-container': '#eae0e0', 'on-surface': '#1b1c1c', 'tertiary': '#076b2d', 'secondary-fixed-dim': '#cdc4c4', 'inverse-primary': '#ffb3b1', 'on-secondary-fixed': '#1f1b1b', 'tertiary-container': '#2e8444', 'outline-variant': '#e4bebc', 'surface-container-low': '#f6f3f2', 'surface-bright': '#fcf9f8', 'error-container': '#ffdad6', 'on-primary-container': '#fffbff', 'on-secondary-fixed-variant': '#4b4546', 'inverse-on-surface': '#f3f0ef', 'inverse-surface': '#303030', 'secondary-fixed': '#eae0e0', 'primary-fixed-dim': '#ffb3b1', 'on-tertiary': '#ffffff', 'outline': '#8f6f6e', 'tertiary-fixed': '#9ef6a9', 'on-background': '#1b1c1c', 'surface': '#fcf9f8', 'on-tertiary-container': '#f7fff2', 'surface-tint': '#bb162c', 'surface-container-lowest': '#ffffff', 'on-primary-fixed-variant': '#92001c', 'on-secondary': '#ffffff', 'on-primary': '#ffffff', 'surface-container': '#f0eded' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'margin': '1rem', 'gutter': '1rem', 'margin-mobile': '1rem', 'space-xs': '0.25rem', 'space-lg': '1.5rem', 'gutter-mobile': '0.75rem', 'space-md': '1rem', 'space-xl': '2rem', 'space-sm': '0.5rem' }, fontFamily: { 'body-sm': ['Inter'], 'display-lg': ['Inter'], 'headline-xl': ['Inter'], 'title-sm': ['Inter'], 'label-sm': ['Inter'], 'headline-md': ['Inter'], 'label-md': ['Inter'], 'headline-lg': ['Inter'], 'body-lg': ['Inter'], 'body-md': ['Inter'], 'label-lg': ['Inter'] }, fontSize: { 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.03em', fontWeight: '800' }], 'headline-xl': ['28px', { lineHeight: '34px', letterSpacing: '-0.02em', fontWeight: '700' }], 'title-sm': ['16px', { lineHeight: '22px', letterSpacing: '-0.005em', fontWeight: '600' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.02em', fontWeight: '700' }], 'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.01em', fontWeight: '600' }], 'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.015em', fontWeight: '700' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.01em', fontWeight: '600' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center -ml-2 text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Zomato Brand Mark" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRhJJjARE6Ky47bRVFJzRjh6Alw27J58lcOtRBksHdRIMmHdTueOnbhhXgfD_8rXWCwuZUXEdhVAGpskATNqlblkCViblIIWxhxdspWENS8GuO4HdOuEQpIFX8FTj8FPnBtCxDhX7wQDmfYXKOQv3u3jo_718un10ECekLkshefqgX_ZvzSnCigBK0TALz5FMQhEwR46ardOWnvyHPEQ1fKdUon2Hz0saBCMfQ3nLS"/><h1 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Checkout</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Subtle Restaurant Header info banner -->
+<div class="bg-surface-container-low px-margin py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[18px]">restaurant</span>
+</div>
+<div class="min-w-0">
+<h2 class="font-title-sm text-title-sm text-on-surface truncate">Meghana Foods</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Indiranagar, 100ft Road</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-tertiary-container text-on-tertiary-container px-2 py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">verified</span> Pure Taste
+    </span>
+</div>
+<!-- Delivery Guarantee Micro-Banner -->
+<div class="px-margin pt-space-sm">
+<div class="bg-primary/5 rounded-xl p-space-sm flex items-center gap-space-sm shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-primary font-bold">Ultra-fast Delivery in 24 mins</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Delivering to: Indiranagar, 12th Main</p>
+</div>
+<button class="text-primary font-label-sm text-label-sm px-2 py-1 bg-surface-container-lowest rounded-full shadow-sm hover:scale-95 transition-transform">
+        Change
+      </button>
+</div>
+</div>
+<!-- Cart Items Card -->
+<div class="px-margin pt-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface">Items Added</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 items</span>
+</div>
+<!-- Item 1 -->
+<div class="py-space-sm flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0 flex-1">
+<!-- Non-veg indicator -->
+<div class="w-4 h-4 rounded-DEFAULT bg-surface-container flex items-center justify-center flex-shrink-0 mt-1">
+<div class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-b-[7px] border-b-[#882A2A]"></div>
+</div>
+<div class="min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface leading-snug">Meghana Special Chicken Biryani</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Regular • Medium Spice</p>
+<p class="font-title-sm text-title-sm text-on-surface font-bold mt-1">₹345</p>
+</div>
+</div>
+<!-- Quantity Stepper -->
+<div class="flex items-center bg-primary-fixed rounded-lg p-1 shadow-sm">
+<button class="w-7 h-7 bg-surface-container-lowest text-primary rounded-DEFAULT flex items-center justify-center font-bold hover:scale-95 active:scale-90 transition-transform" onclick="decrementCount('qty-1', 'item-1-price', 345)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-lg text-label-lg text-on-primary-fixed px-2.5 font-bold" id="qty-1">1</span>
+<button class="w-7 h-7 bg-surface-container-lowest text-primary rounded-DEFAULT flex items-center justify-center font-bold hover:scale-95 active:scale-90 transition-transform" onclick="incrementCount('qty-1', 'item-1-price', 345)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="py-space-sm flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0 flex-1">
+<!-- Non-veg indicator -->
+<div class="w-4 h-4 rounded-DEFAULT bg-surface-container flex items-center justify-center flex-shrink-0 mt-1">
+<div class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-b-[7px] border-b-[#882A2A]"></div>
+</div>
+<div class="min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface leading-snug">Chicken Boneless Kabab</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Plate of 6 pieces</p>
+<p class="font-title-sm text-title-sm text-on-surface font-bold mt-1">₹290</p>
+</div>
+</div>
+<!-- Quantity Stepper -->
+<div class="flex items-center bg-primary-fixed rounded-lg p-1 shadow-sm">
+<button class="w-7 h-7 bg-surface-container-lowest text-primary rounded-DEFAULT flex items-center justify-center font-bold hover:scale-95 active:scale-90 transition-transform" onclick="decrementCount('qty-2', 'item-2-price', 290)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-lg text-label-lg text-on-primary-fixed px-2.5 font-bold" id="qty-2">1</span>
+<button class="w-7 h-7 bg-surface-container-lowest text-primary rounded-DEFAULT flex items-center justify-center font-bold hover:scale-95 active:scale-90 transition-transform" onclick="incrementCount('qty-2', 'item-2-price', 290)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Add more items quick trigger -->
+<button class="w-full mt-space-sm py-2.5 bg-surface-container-low hover:bg-surface-container rounded-lg flex items-center justify-center gap-space-xs text-primary font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+        Add more items from Meghana Foods
+      </button>
+</div>
+</div>
+<!-- Delivery Instructions -->
+<div class="px-margin pt-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">directions_bike</span>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Delivery Instructions</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="instruction-pill px-3 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" onclick="toggleInstruction(this)">
+<span class="material-symbols-outlined text-[16px]">door_front</span>
+          Leave at door
+        </button>
+<button class="instruction-pill px-3 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" onclick="toggleInstruction(this)">
+<span class="material-symbols-outlined text-[16px]">phone_disabled</span>
+          Avoid calling
+        </button>
+<button class="instruction-pill px-3 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" onclick="toggleInstruction(this)">
+<span class="material-symbols-outlined text-[16px]">pets</span>
+          Pet at home
+        </button>
+<button class="instruction-pill px-3 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" onclick="toggleInstruction(this)">
+<span class="material-symbols-outlined text-[16px]">notifications</span>
+          Ring doorbell
+        </button>
+</div>
+</div>
+</div>
+<!-- Tip Delivery Partner -->
+<div class="px-margin pt-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">favorite</span>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Tip your Delivery Partner</h3>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-tertiary-fixed px-2 py-0.5 rounded-full">100% goes to rider</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Thank them for bringing delicious food safely in rain or shine.</p>
+<div class="grid grid-cols-4 gap-2">
+<button class="tip-btn py-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg flex flex-col items-center justify-center transition-colors" onclick="selectTip(this, 20)">
+<span>₹20</span>
+<span class="text-[10px] text-on-surface-variant">😊</span>
+</button>
+<button class="tip-btn active-tip py-2 bg-primary-fixed text-primary font-label-md text-label-md rounded-lg flex flex-col items-center justify-center shadow-sm transition-colors" onclick="selectTip(this, 30)">
+<span>₹30</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed">Popular</span>
+</button>
+<button class="tip-btn py-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg flex flex-col items-center justify-center transition-colors" onclick="selectTip(this, 50)">
+<span>₹50</span>
+<span class="text-[10px] text-on-surface-variant">⭐ Hero</span>
+</button>
+<button class="tip-btn py-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg flex flex-col items-center justify-center transition-colors" onclick="selectTip(this, 0)">
+<span>Custom</span>
+<span class="text-[10px] text-on-surface-variant">✏️</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Promo & Coupon Section -->
+<div class="px-margin pt-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">local_offer</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">ALPHA40</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-1.5 py-0.2 rounded font-bold">APPLIED</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary font-bold">You saved ₹120 with this coupon!</p>
+</div>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-on-primary-fixed-variant transition-colors p-1">
+          Remove
+        </button>
+</div>
+</div>
+</div>
+<!-- Transparent Bill Details -->
+<div class="px-margin pt-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">receipt_long</span>
+        Bill Details
+      </h3>
+<div class="space-y-2.5">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface-variant">Item Total</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">₹635</span>
+</div>
+<div class="flex items-center justify-between text-tertiary">
+<span class="font-body-md text-body-md flex items-center gap-1">
+            Coupon Discount (ALPHA40)
+            <span class="material-symbols-outlined text-[14px]">check_circle</span>
+</span>
+<span class="font-body-md text-body-md font-bold">-₹120</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md text-on-surface-variant">Delivery Fee</span>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary px-1.5 py-0.5 rounded-full font-bold">GOLD</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹40</span>
+<span class="font-label-md text-label-md text-tertiary font-bold">FREE</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md text-on-surface-variant">Platform Fee</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">info</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">₹5</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1">
+<span class="font-body-md text-body-md text-on-surface-variant">GST &amp; Restaurant Taxes</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">info</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">₹32</span>
+</div>
+<!-- Tip row if active -->
+<div class="flex items-center justify-between" id="tip-row">
+<span class="font-body-md text-body-md text-on-surface-variant">Delivery Partner Tip</span>
+<span class="font-body-md text-body-md text-on-surface font-medium" id="tip-amount-display">₹0</span>
+</div>
+</div>
+<!-- Divider equivalent via subtle container shift -->
+<div class="mt-space-md pt-space-sm bg-surface-container-low -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex items-center justify-between mb-1">
+<div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">To Pay</span>
+<p class="font-label-sm text-label-sm text-tertiary font-bold">You saved ₹145 on this order 🥳</p>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold" id="grand-total">₹552</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Cancellation Policy Micro-Card -->
+<div class="px-margin pt-space-sm">
+<div class="bg-surface-container-high/40 rounded-xl p-space-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        100% refund guarantee if food is spilled or tamper-seal is broken.
+      </p>
+</div>
+</div>
+<!-- Sticky Bottom Bar CTA -->
+<div class="fixed bottom-0 left-0 right-0 p-space-md bg-surface/95 backdrop-blur-md shadow-[0_-6px_28px_rgba(0,0,0,0.08)] z-40">
+<div class="max-w-[640px] mx-auto flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Total Amount</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold" id="bottom-bar-price">₹552</span>
+<span class="font-body-sm text-body-sm text-tertiary font-bold">Saved ₹145</span>
+</div>
+</div>
+<button class="flex-1 max-w-[240px] h-[52px] bg-primary hover:bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-98 transition-all">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let currentTip = 0;
+  const baseTotal = 552;
+
+  function incrementCount(elementId, priceId, pricePerUnit) {
+    const el = document.getElementById(elementId);
+    let count = parseInt(el.innerText);
+    count++;
+    el.innerText = count;
+    updateTotal();
+  }
+
+  function decrementCount(elementId, priceId, pricePerUnit) {
+    const el = document.getElementById(elementId);
+    let count = parseInt(el.innerText);
+    if (count > 1) {
+      count--;
+      el.innerText = count;
+    } else {
+      // micro feedback for removal
+      el.innerText = '0';
+    }
+    updateTotal();
+  }
+
+  function toggleInstruction(btn) {
+    const isActive = btn.classList.contains('bg-primary-fixed');
+    if (isActive) {
+      btn.classList.remove('bg-primary-fixed', 'text-primary');
+      btn.classList.add('bg-surface-container-low', 'text-on-surface');
+    } else {
+      btn.classList.add('bg-primary-fixed', 'text-primary');
+      btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+    }
+  }
+
+  function selectTip(btn, amount) {
+    document.querySelectorAll('.tip-btn').forEach(b => {
+      b.classList.remove('bg-primary-fixed', 'text-primary', 'shadow-sm');
+      b.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+
+    btn.classList.add('bg-primary-fixed', 'text-primary', 'shadow-sm');
+    btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+
+    currentTip = amount;
+    const tipRow = document.getElementById('tip-amount-display');
+    if (tipRow) {
+      tipRow.innerText = '₹' + amount;
+    }
+    updateTotal();
+  }
+
+  function updateTotal() {
+    const grand = baseTotal + currentTip;
+    const grandTotalEl = document.getElementById('grand-total');
+    const bottomPriceEl = document.getElementById('bottom-bar-price');
+    if (grandTotalEl) grandTotalEl.innerText = '₹' + grand;
+    if (bottomPriceEl) bottomPriceEl.innerText = '₹' + grand;
+  }
+</script></main></body></html>

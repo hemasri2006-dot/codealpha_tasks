@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface-container-high': '#eae7e7', 'on-primary-fixed': '#410007', 'on-error': '#ffffff', 'on-error-container': '#93000a', 'surface-container-highest': '#e4e2e1', 'background': '#fcf9f8', 'primary-fixed': '#ffdad8', 'on-secondary-container': '#696363', 'on-surface-variant': '#5b403f', 'on-tertiary-fixed': '#002109', 'tertiary-fixed-dim': '#82da8f', 'primary': '#b7122a', 'surface-dim': '#dcd9d9', 'error': '#ba1a1a', 'surface-variant': '#e4e2e1', 'secondary': '#635d5d', 'on-tertiary-fixed-variant': '#005320', 'primary-container': '#db313f', 'secondary-container': '#eae0e0', 'on-surface': '#1b1c1c', 'tertiary': '#076b2d', 'secondary-fixed-dim': '#cdc4c4', 'inverse-primary': '#ffb3b1', 'on-secondary-fixed': '#1f1b1b', 'tertiary-container': '#2e8444', 'outline-variant': '#e4bebc', 'surface-container-low': '#f6f3f2', 'surface-bright': '#fcf9f8', 'error-container': '#ffdad6', 'on-primary-container': '#fffbff', 'on-secondary-fixed-variant': '#4b4546', 'inverse-on-surface': '#f3f0ef', 'inverse-surface': '#303030', 'secondary-fixed': '#eae0e0', 'primary-fixed-dim': '#ffb3b1', 'on-tertiary': '#ffffff', 'outline': '#8f6f6e', 'tertiary-fixed': '#9ef6a9', 'on-background': '#1b1c1c', 'surface': '#fcf9f8', 'on-tertiary-container': '#f7fff2', 'surface-tint': '#bb162c', 'surface-container-lowest': '#ffffff', 'on-primary-fixed-variant': '#92001c', 'on-secondary': '#ffffff', 'on-primary': '#ffffff', 'surface-container': '#f0eded' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'margin': '1rem', 'gutter': '1rem', 'margin-mobile': '1rem', 'space-xs': '0.25rem', 'space-lg': '1.5rem', 'gutter-mobile': '0.75rem', 'space-md': '1rem', 'space-xl': '2rem', 'space-sm': '0.5rem' }, fontFamily: { 'body-sm': ['Inter'], 'display-lg': ['Inter'], 'headline-xl': ['Inter'], 'title-sm': ['Inter'], 'label-sm': ['Inter'], 'headline-md': ['Inter'], 'label-md': ['Inter'], 'headline-lg': ['Inter'], 'body-lg': ['Inter'], 'body-md': ['Inter'], 'label-lg': ['Inter'] }, fontSize: { 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.03em', fontWeight: '800' }], 'headline-xl': ['28px', { lineHeight: '34px', letterSpacing: '-0.02em', fontWeight: '700' }], 'title-sm': ['16px', { lineHeight: '22px', letterSpacing: '-0.005em', fontWeight: '600' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.02em', fontWeight: '700' }], 'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.01em', fontWeight: '600' }], 'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.015em', fontWeight: '700' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.01em', fontWeight: '600' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center -ml-2 text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Zomato Brand Mark" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbtlrYx0n8cXyy9xlwZlDRlac8UF1DrgdQgWIyT7CQY8sdYwYzBPqwrRJkhlWWQm5EiNIkNt1M-M-zZ6SQfMI2idNsG2OaUW-NNOLyBL1qDBWnvkZhoFe3FlXVy2ep0vss1w5zneGTjXQn271oLOxlppkhnbpB--lcFC6LF0kQaLRZu6NQPZ4RtsTIdNugGWaFERvPKG83uja_ICdxIvy0CKsQKpFEf8i-KbwSPk2b"/><h1 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Checkout</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Security Sub-banner (Delightful reassurance) -->
+<div class="px-margin pt-space-xs pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="tracking-wide">100% Encrypted &amp; Secure Checkout</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Dispatch</span>
+</div>
+</div>
+<!-- Delivery Address Card -->
+<div class="px-margin mb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<!-- Decorative subtle accent background tint -->
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">home_pin</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Home • Indiranagar</h2>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-1.5 py-0.5 rounded">Default</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 line-clamp-2">
+              Flat 402, Green Glen Apts, 12th Main, Indiranagar, Bengaluru
+            </p>
+<div class="flex items-center gap-1.5 mt-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary">person</span>
+<span class="font-medium">Priya Sharma</span>
+<span class="text-secondary">•</span>
+<span class="text-secondary">+91 98765 43210</span>
+</div>
+</div>
+</div>
+<button class="flex-shrink-0 text-primary font-label-md text-label-md px-2.5 py-1.5 rounded-lg hover:bg-primary-fixed/30 transition-colors active:scale-95" type="button">
+          Change
+        </button>
+</div>
+<!-- Add Delivery Instructions Micro-Action -->
+<div class="mt-3 pt-3 flex items-center justify-between bg-surface-container-low rounded-lg px-space-sm py-1.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">record_voice_over</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Leave at the door, bell broken</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-semibold">Edit Note</button>
+</div>
+</div>
+</div>
+<!-- Delivery Slot Selector -->
+<div class="px-margin mb-space-lg">
+<div class="font-label-md text-label-md text-on-surface-variant mb-space-xs uppercase tracking-wider">Delivery Time Preference</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Standard Instant Delivery Option -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="delivery_slot" onchange="updateDeliveryBadge(this)" type="radio" value="instant"/>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest peer-checked:bg-primary-fixed/40 shadow-sm transition-all duration-200 flex flex-col justify-between h-full relative overflow-hidden">
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="w-4 h-4 rounded-full bg-surface-container flex items-center justify-center peer-checked:bg-primary">
+<span class="w-2 h-2 rounded-full bg-primary peer-checked:bg-on-primary"></span>
+</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">Instant Delivery</div>
+<div class="font-body-sm text-body-sm text-tertiary font-semibold mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 20-25 mins
+            </div>
+</div>
+</div>
+</label>
+<!-- Schedule for Later Option -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="delivery_slot" onchange="updateDeliveryBadge(this)" type="radio" value="schedule"/>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest peer-checked:bg-primary-fixed/40 shadow-sm transition-all duration-200 flex flex-col justify-between h-full relative">
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_today</span>
+<span class="w-4 h-4 rounded-full bg-surface-container flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">Schedule Later</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Select custom time</div>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Order Items Quick-glance Pill Banner -->
+<div class="px-margin mb-space-md">
+<div class="bg-surface-container rounded-xl px-space-md py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">2 items • Meghana Foods</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Boneless Chicken Biryani, Paneer 65</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">₹552</span>
+</div>
+</div>
+</div>
+<!-- Payment Methods Accordion / Sectioned List -->
+<div class="px-margin flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Payment Methods</h2>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded-full font-bold">₹25 Saved Today</span>
+</div>
+<!-- 1. RECOMMENDED UPI SECTION -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Recommended UPI</span>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-1.5 py-0.2 rounded font-bold">Fastest</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Google Pay (Selected Default) -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low cursor-pointer transition-all duration-150 hover:bg-surface-container" onclick="selectPaymentMethod('Google Pay', 'Pay ₹552 via Google Pay 🔒')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center gap-1.5">
+                Google Pay
+                <span class="bg-tertiary/10 text-tertiary font-label-sm text-label-sm px-1.5 py-0.2 rounded">Instant 1-Tap</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">priya.sharma@okaxis</div>
+</div>
+</div>
+<input checked="" class="accent-primary w-4 h-4 cursor-pointer" name="payment_method" type="radio" value="gpay"/>
+</label>
+<!-- PhonePe -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all duration-150" onclick="selectPaymentMethod('PhonePe', 'Pay ₹552 via PhonePe 🔒')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">smartphone</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">PhonePe</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Direct UPI transfer</div>
+</div>
+</div>
+<input class="accent-primary w-4 h-4 cursor-pointer" name="payment_method" type="radio" value="phonepe"/>
+</label>
+<!-- Paytm UPI -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all duration-150" onclick="selectPaymentMethod('Paytm', 'Pay ₹552 via Paytm 🔒')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Paytm UPI</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Linked Bank Accounts</div>
+</div>
+</div>
+<input class="accent-primary w-4 h-4 cursor-pointer" name="payment_method" type="radio" value="paytm"/>
+</label>
+<!-- Custom UPI ID -->
+<button class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low text-left transition-colors" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">Add New UPI ID / VPA</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- 2. CREDIT / DEBIT CARDS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Credit &amp; Debit Cards</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">credit_card</span>
+</div>
+<!-- Saved Card Item with CVV Input -->
+<label class="block p-3 rounded-xl bg-surface-container-low cursor-pointer" onclick="selectPaymentMethod('HDFC Millennia', 'Pay ₹552 with HDFC Card')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-6 rounded bg-surface-container-highest flex items-center justify-center font-bold text-[10px] tracking-widest text-on-surface">
+              VISA
+            </div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">HDFC Millennia Credit Card</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">•••• 8042 • Expires 09/28</div>
+</div>
+</div>
+<input class="accent-primary w-4 h-4 cursor-pointer mt-1" name="payment_method" type="radio" value="card_hdfc"/>
+</div>
+<!-- Inline CVV Quick Input Field -->
+<div class="mt-3 pt-2 flex items-center justify-between bg-surface-container-lowest rounded-lg px-space-sm py-2">
+<div class="flex items-center gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="cvv-input">Security CVV</label>
+<input class="w-14 bg-surface-container-high rounded px-2 py-1 text-center font-bold text-body-sm tracking-widest text-on-surface outline-none focus:bg-surface-container-highest" id="cvv-input" maxlength="3" onclick="event.stopPropagation()" placeholder="•••" type="password"/>
+</div>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span> 3 digits behind card
+          </span>
+</div>
+</label>
+<!-- Add New Card CTA -->
+<button class="mt-space-sm w-full flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low text-left transition-colors" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">add_card</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">Add New Credit or Debit Card</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- 3. WALLETS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Digital Wallets</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Amazon Pay with available balance -->
+<label class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low cursor-pointer transition-all duration-150" onclick="selectPaymentMethod('Amazon Pay', 'Pay ₹552 via Amazon Pay')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Amazon Pay Balance</div>
+<div class="font-body-sm text-body-sm text-tertiary font-medium">Available balance: ₹150 (₹402 from bank)</div>
+</div>
+</div>
+<input class="accent-primary w-4 h-4 cursor-pointer" name="payment_method" type="radio" value="amazon_pay"/>
+</label>
+<!-- Paytm Wallet -->
+<label class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low cursor-pointer transition-all duration-150" onclick="selectPaymentMethod('Paytm Wallet', 'Pay ₹552 via Paytm Wallet')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">wallet</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Paytm Wallet</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Tap to link &amp; pay</div>
+</div>
+</div>
+<input class="accent-primary w-4 h-4 cursor-pointer" name="payment_method" type="radio" value="paytm_wallet"/>
+</label>
+</div>
+</div>
+<!-- 4. CASH ON DELIVERY / PAY ON DELIVERY -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<label class="flex items-center justify-between cursor-pointer" onclick="selectPaymentMethod('Cash On Delivery', 'Place Order (COD) ₹552')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">local_atm</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Pay on Delivery (Cash / UPI)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Pay digitally or cash when order arrives</div>
+</div>
+</div>
+<input class="accent-primary w-4 h-4 cursor-pointer" name="payment_method" type="radio" value="cod"/>
+</label>
+</div>
+<!-- Cancellation Policy Note (Human & Warm Delight) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">timer</span>
+<div>
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface">60-Second No-Questions Cancellation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+          Changed your mind or added the wrong item? Enjoy 100% full refund if canceled within 60 seconds of order confirmation.
+        </p>
+</div>
+</div>
+</div>
+<!-- STICKY FLOATING CTA BAR (SURFACE LEVEL 3) -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md px-margin py-3 pb-safe shadow-[0_-6px_28px_rgba(0,0,0,0.08)]">
+<div class="max-w-[640px] mx-auto flex flex-col gap-2">
+<!-- Order Quick Micro-Status bar -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="font-bold">Total Payable:</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹552</span>
+<span class="text-secondary line-through font-body-sm text-body-sm">₹577</span>
+</div>
+<button class="text-primary font-label-sm text-label-sm flex items-center gap-0.5 hover:underline" type="button">
+          View Detailed Bill <span class="material-symbols-outlined text-[14px]">expand_less</span>
+</button>
+</div>
+<!-- Interactive Swipe/Tap Pay Button -->
+<button class="w-full h-[52px] bg-primary rounded-xl text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/25 active:scale-[0.98] transition-transform overflow-hidden relative group" id="pay-cta-btn" onclick="triggerCheckoutSuccess(this)">
+<!-- Interactive shine gloss effect -->
+<span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span id="cta-label">Pay ₹552 via Google Pay</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  function selectPaymentMethod(name, labelText) {
+    const ctaLabel = document.getElementById('cta-label');
+    if (ctaLabel) {
+      ctaLabel.textContent = labelText;
+    }
+  }
+
+  function updateDeliveryBadge(radioInput) {
+    const isInstant = radioInput.value === 'instant';
+    const ctaBtn = document.getElementById('pay-cta-btn');
+    if (ctaBtn) {
+      ctaBtn.classList.add('scale-[0.99]');
+      setTimeout(() => ctaBtn.classList.remove('scale-[0.99]'), 150);
+    }
+  }
+
+  function triggerCheckoutSuccess(btn) {
+    btn.disabled = true;
+    btn.innerHTML = `
+      <span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span>
+      <span>Authenticating Payment...</span>
+    `;
+    setTimeout(() => {
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-tertiary');
+      btn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        <span>Order Placed! Dispatching...</span>
+      `;
+    }, 1200);
+  }
+</script></main></body></html>

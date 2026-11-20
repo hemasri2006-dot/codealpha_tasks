@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface-container-high': '#eae7e7', 'on-primary-fixed': '#410007', 'on-error': '#ffffff', 'on-error-container': '#93000a', 'surface-container-highest': '#e4e2e1', 'background': '#fcf9f8', 'primary-fixed': '#ffdad8', 'on-secondary-container': '#696363', 'on-surface-variant': '#5b403f', 'on-tertiary-fixed': '#002109', 'tertiary-fixed-dim': '#82da8f', 'primary': '#b7122a', 'surface-dim': '#dcd9d9', 'error': '#ba1a1a', 'surface-variant': '#e4e2e1', 'secondary': '#635d5d', 'on-tertiary-fixed-variant': '#005320', 'primary-container': '#db313f', 'secondary-container': '#eae0e0', 'on-surface': '#1b1c1c', 'tertiary': '#076b2d', 'secondary-fixed-dim': '#cdc4c4', 'inverse-primary': '#ffb3b1', 'on-secondary-fixed': '#1f1b1b', 'tertiary-container': '#2e8444', 'outline-variant': '#e4bebc', 'surface-container-low': '#f6f3f2', 'surface-bright': '#fcf9f8', 'error-container': '#ffdad6', 'on-primary-container': '#fffbff', 'on-secondary-fixed-variant': '#4b4546', 'inverse-on-surface': '#f3f0ef', 'inverse-surface': '#303030', 'secondary-fixed': '#eae0e0', 'primary-fixed-dim': '#ffb3b1', 'on-tertiary': '#ffffff', 'outline': '#8f6f6e', 'tertiary-fixed': '#9ef6a9', 'on-background': '#1b1c1c', 'surface': '#fcf9f8', 'on-tertiary-container': '#f7fff2', 'surface-tint': '#bb162c', 'surface-container-lowest': '#ffffff', 'on-primary-fixed-variant': '#92001c', 'on-secondary': '#ffffff', 'on-primary': '#ffffff', 'surface-container': '#f0eded' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'margin': '1rem', 'gutter': '1rem', 'margin-mobile': '1rem', 'space-xs': '0.25rem', 'space-lg': '1.5rem', 'gutter-mobile': '0.75rem', 'space-md': '1rem', 'space-xl': '2rem', 'space-sm': '0.5rem' }, fontFamily: { 'body-sm': ['Inter'], 'display-lg': ['Inter'], 'headline-xl': ['Inter'], 'title-sm': ['Inter'], 'label-sm': ['Inter'], 'headline-md': ['Inter'], 'label-md': ['Inter'], 'headline-lg': ['Inter'], 'body-lg': ['Inter'], 'body-md': ['Inter'], 'label-lg': ['Inter'] }, fontSize: { 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.03em', fontWeight: '800' }], 'headline-xl': ['28px', { lineHeight: '34px', letterSpacing: '-0.02em', fontWeight: '700' }], 'title-sm': ['16px', { lineHeight: '22px', letterSpacing: '-0.005em', fontWeight: '600' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.02em', fontWeight: '700' }], 'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.01em', fontWeight: '600' }], 'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.015em', fontWeight: '700' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.01em', fontWeight: '600' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center -ml-2 text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Zomato Brand Mark" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Sj5ms-ZfY2NWt4gDmhM0SdhIxGqCmBPUlveAeqK15IxKZdWEgaxfEVW-yDVpjeNVayIn7fP_bvvENYemU4SJONUvAgmyZbkX-hGoI8NH_TUIwyrrzQ9gN2H-4cJVSVFUyxz7qur3LPugOCWsn7Gj-zI0uzZj9ORJ7PyFP3iTZsuCyCz5v4XUoy4Ld38PUe1USqwFgGWXF_H_ZixNFPHZyPY_XbW2wUVk_eOafCWs"/><h1 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Live Order Tracking</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 bg-surface"><div class="flex flex-col w-full pb-safe">
+<!-- Dynamic Confetti Cannon Canvas -->
+<div class="relative w-full overflow-hidden">
+<canvas class="pointer-events-none absolute inset-0 z-20 w-full h-full" id="confetti-canvas"></canvas>
+<!-- Top Status Bar & Help Row -->
+<div class="px-margin pt-space-md pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Live Status</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-semibold">#ZOM-89421</span>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-transform active:scale-95 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">headset_mic</span>
+<span class="font-label-md text-label-md font-semibold">Help</span>
+</button>
+</div>
+<!-- Celebratory Acceptance Banner -->
+<div class="px-margin mb-space-md">
+<div class="relative overflow-hidden rounded-xl bg-tertiary-container/15 p-space-md shadow-sm">
+<div class="flex items-start gap-space-md relative z-10">
+<div class="w-12 h-12 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center flex-shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Meghana Foods</h2>
+<span class="material-symbols-outlined text-[18px] text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium">Order accepted &amp; sent to the kitchen!</p>
+<div class="mt-2 flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-surface-container-lowest px-2 py-0.5 rounded-full font-bold shadow-xs">
+<span class="material-symbols-outlined text-[12px]">local_fire_department</span> Authentic Hyderabadi Handi
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ETA & 4-Stage Stepper Bento Card -->
+<div class="px-margin mb-space-md">
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md">
+<!-- ETA Main Header -->
+<div class="flex items-baseline justify-between mb-space-sm">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider block">Estimated Delivery</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-display-lg text-display-lg font-extrabold text-primary tracking-tight" id="countdown-timer">22</span>
+<span class="font-headline-lg text-headline-lg font-bold text-primary">Mins</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface-variant">Arrival Time</span>
+<p class="font-headline-md text-headline-md font-bold text-on-surface flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary">schedule</span>
+            1:45 PM
+          </p>
+</div>
+</div>
+<!-- Live Stepper Tracker -->
+<div class="mt-space-md pt-space-sm">
+<div class="relative flex items-center justify-between mb-3 px-2">
+<!-- Continuous Progress Track -->
+<div class="absolute left-6 right-6 top-1/2 -translate-y-1/2 h-1 bg-surface-container rounded-full z-0"></div>
+<div class="absolute left-6 w-[38%] top-1/2 -translate-y-1/2 h-1 bg-primary rounded-full z-0 transition-all duration-700"></div>
+<!-- Stage 1: Done -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+</div>
+<!-- Stage 2: Active / Kitchen Pulse -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="relative flex items-center justify-center">
+<span class="absolute inline-flex h-9 w-9 rounded-full bg-primary/30 animate-ping"></span>
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[18px]">skillet</span>
+</div>
+</div>
+</div>
+<!-- Stage 3: Upcoming (Courier) -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">two_wheeler</span>
+</div>
+</div>
+<!-- Stage 4: Upcoming (Doorstep) -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">home_pin</span>
+</div>
+</div>
+</div>
+<!-- Stepper Labels -->
+<div class="grid grid-cols-4 text-center gap-1">
+<div>
+<p class="font-label-sm text-label-sm font-bold text-tertiary">Confirmed</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[10px]">1:23 PM</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-primary animate-pulse">In Kitchen</p>
+<p class="font-body-sm text-body-sm text-primary font-medium text-[10px]">Cooking now</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm font-medium text-on-surface-variant">Pick-up</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[10px]">Waiting</p>
+</div>
+<div>
+<p class="font-label-sm text-label-sm font-medium text-on-surface-variant">Doorstep</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[10px]">Drop-off</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live GPS Map Simulation Card -->
+<div class="px-margin mb-space-md">
+<div class="relative rounded-xl overflow-hidden shadow-md bg-surface-container-low">
+<!-- Simulated Live Map Background -->
+<div class="w-full h-44 bg-cover bg-center relative" data-location="Indiranagar 100 Feet Road, Bengaluru" style="">
+<div class="absolute inset-0 bg-surface/20 backdrop-blur-[0.5px]"></div>
+<!-- Animated Route Layer (SVG overlay) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" preserveaspectratio="none" viewbox="0 0 360 176">
+<!-- Route Path Shadow -->
+<path d="M 60 135 C 110 130, 140 70, 220 75 S 270 40, 305 35" fill="none" stroke="#e4bebc" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+<!-- Active Traveling Route Path -->
+<path d="M 60 135 C 110 130, 140 70, 220 75 S 270 40, 305 35" fill="none" stroke="#b7122a" stroke-dasharray="6 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+</svg>
+<!-- Restaurant Origin Pin -->
+<div class="absolute left-8 bottom-6 flex flex-col items-center group">
+<div class="px-2 py-0.5 rounded-full bg-surface-container-lowest shadow-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Meghana
+          </div>
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+</div>
+<!-- Rider Transit Pulse Indicator -->
+<div class="absolute left-[48%] top-[38%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="relative flex items-center justify-center">
+<span class="absolute inline-flex h-11 w-11 rounded-full bg-primary/20 animate-ping"></span>
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined text-[20px]">two_wheeler</span>
+</div>
+</div>
+<span class="mt-1 px-2 py-0.5 rounded-full bg-on-surface text-surface font-label-sm text-[10px] font-bold shadow">Ramesh (At Restaurant)</span>
+</div>
+<!-- Destination Pin -->
+<div class="absolute right-7 top-4 flex flex-col items-center">
+<div class="px-2 py-0.5 rounded-full bg-surface-container-lowest shadow-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Home
+          </div>
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[18px]">home</span>
+</div>
+</div>
+<!-- Recenter / Zoom Map Mini Pill -->
+<div class="absolute right-3 bottom-3 flex flex-col gap-1.5">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+</button>
+</div>
+</div>
+<!-- Quick Traffic Strip Banner -->
+<div class="bg-surface-container-lowest px-space-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">traffic</span>
+<span class="font-body-sm text-body-sm text-on-surface">Moderate traffic on 100 Ft Rd • Smooth transit</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Live GPS</span>
+</div>
+</div>
+</div>
+<!-- Delivery Partner Bento Card with OTP -->
+<div class="px-margin mb-space-md">
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-13 h-13 rounded-full object-cover shadow-sm" data-alt="A warm, smiling Indian delivery executive in a neat red polo shirt and safety helmet, soft warm natural sunlight, high detail professional courier portrait, vibrant and trustworthy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU1BH4u8UhhswsYUehPEdje-db5xHywVscLsQVJfxkvH9YtMwFlzD8a9tgbhTUwVyFontLNCxBuD5NfILwrAPt20ke8e3O6egwLfcywj6eiYqY29CTP4FDMmp1-0EGnnxiB8lKzm3P4ym4US_vlwlKicarcA3HJGW7N5q6FsmgEOOFf4FZ3KjD3S99wBkUSOkbPIgTOil7d19jH7ZyQp1elYu3N3OHLNtHDosNFzv4"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]">verified_user</span>
+</div>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Ramesh Kumar</h3>
+<div class="flex items-center gap-0.5 px-1.5 py-0.2 rounded-full bg-tertiary text-on-tertiary text-[11px] font-bold">
+<span>4.9</span>
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">health_and_safety</span>
+              Vaccinated &amp; sanitised daily
+            </p>
+</div>
+</div>
+<!-- Delivery OTP Shield Badge -->
+<div class="bg-primary-fixed text-on-primary-fixed px-3 py-1.5 rounded-lg text-center flex-shrink-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider block opacity-80">OTP</span>
+<span class="font-headline-md text-headline-md font-extrabold tracking-widest">4892</span>
+</div>
+</div>
+<!-- Quick Contact Actions -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-sm">
+<a class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high active:scale-98 transition-transform font-label-lg text-label-lg font-semibold shadow-xs" href="tel:9876543210">
+<span class="material-symbols-outlined text-primary text-[20px]">call</span>
+          Call Partner
+        </a>
+<button class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high active:scale-98 transition-transform font-label-lg text-label-lg font-semibold shadow-xs" id="open-chat-btn">
+<span class="material-symbols-outlined text-primary text-[20px]">chat</span>
+          Message
+        </button>
+</div>
+<!-- Audio / Delivery note -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">record_voice_over</span>
+<span class="font-body-sm text-body-sm">Instruction: Ring bell &amp; leave at door</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline">Edit</button>
+</div>
+</div>
+</div>
+<!-- Collapsible Order Details Summary Sheet -->
+<div class="px-margin mb-space-lg">
+<div class="rounded-xl bg-surface-container-lowest overflow-hidden shadow-md">
+<!-- Accordion Header -->
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" id="order-accordion-toggle">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">receipt_long</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-title-sm text-title-sm text-on-surface font-bold truncate">Order Summary (2 Items)</h4>
+<p class="font-body-sm text-body-sm text-tertiary font-semibold flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">account_balance_wallet</span>
+              ₹552 Paid via UPI • Meghana Foods
+            </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300" id="accordion-arrow">expand_more</span>
+</button>
+<!-- Expandable Content Panel -->
+<div class="px-space-md pb-space-md hidden" id="order-accordion-body">
+<!-- Item 1 -->
+<div class="flex items-center justify-between py-2.5">
+<div class="flex items-start gap-2.5 min-w-0">
+<!-- Non-Veg Dietary Marker -->
+<div class="w-4 h-4 rounded-[3px] bg-surface-container-lowest flex items-center justify-center mt-1 flex-shrink-0 shadow-xs p-0.5">
+<span class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-b-[8px] border-b-primary"></span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold truncate">Meghana Special Chicken Biryani</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Qty: 1 • Includes Salan &amp; Raita</p>
+</div>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">₹340</span>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between py-2.5">
+<div class="flex items-start gap-2.5 min-w-0">
+<!-- Non-Veg Dietary Marker -->
+<div class="w-4 h-4 rounded-[3px] bg-surface-container-lowest flex items-center justify-center mt-1 flex-shrink-0 shadow-xs p-0.5">
+<span class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-b-[8px] border-b-primary"></span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold truncate">Chicken 65 Boneless Appetizer</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Qty: 1 • Crisp Curry Leaves</p>
+</div>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">₹260</span>
+</div>
+<!-- Bill Details Breakup -->
+<div class="mt-2 pt-3 bg-surface-container-low rounded-lg p-space-sm space-y-1.5">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Item Total</span>
+<span>₹600</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-tertiary">
+<span>Special Zomato Gold Savings</span>
+<span>- ₹90</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Delivery Fee &amp; Taxes</span>
+<span>₹42</span>
+</div>
+<div class="flex justify-between font-title-sm text-title-sm text-on-surface font-bold pt-1.5">
+<span>Total Paid</span>
+<span class="text-primary font-headline-md text-headline-md">₹552</span>
+</div>
+</div>
+<!-- Tax Invoice and Receipt Downloader -->
+<div class="mt-space-sm flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold hover:underline">
+<span class="material-symbols-outlined text-[16px]">download</span>
+            Download Tax Invoice
+          </button>
+<span class="font-body-sm text-body-sm text-on-surface-variant">GSTIN: 29AABCM9101Q1Z4</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Persistent Sticky Bar / Action Center -->
+<div class="sticky bottom-4 z-40 px-margin mt-auto">
+<div class="bg-surface-container-highest/95 backdrop-blur-md p-2 rounded-2xl shadow-xl flex items-center gap-space-sm">
+<button class="flex-1 h-12 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high active:scale-98 transition-transform font-label-lg text-label-lg font-bold flex items-center justify-center gap-2" onclick="window.location.href='#'">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+        Back to Home
+      </button>
+<button class="flex-1 h-12 rounded-xl bg-primary text-on-primary hover:bg-primary-container active:scale-98 transition-transform font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md" id="share-tracking-btn">
+<span class="material-symbols-outlined text-[20px]">share_location</span>
+        Share Tracking
+      </button>
+</div>
+</div>
+<!-- Toast Notification Pill (Hidden by Default) -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full font-label-md text-label-md shadow-2xl flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none translate-y-3" id="toast-message">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">check_circle</span>
+<span id="toast-text">Tracking link copied to clipboard!</span>
+</div>
+</div>
+<script>
+  // Simple micro-interactions and delight touches
+  (function () {
+    // 1. Confetti Burst on Screen Load
+    const canvas = document.getElementById('confetti-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      canvas.width = canvas.parentElement.offsetWidth;
+      canvas.height = canvas.parentElement.offsetHeight;
+
+      const particles = [];
+      const colors = ['#b7122a', '#076b2d', '#db313f', '#2e8444', '#ffdad8', '#9ef6a9'];
+
+      for (let i = 0; i < 40; i++) {
+        particles.push({
+          x: canvas.width * 0.5,
+          y: 40,
+          vx: (Math.random() - 0.5) * 6,
+          vy: Math.random() * -4 - 1,
+          size: Math.random() * 6 + 3,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          rotationSpeed: (Math.random() - 0.5) * 8,
+          alpha: 1
+        });
+      }
+
+      let frame = 0;
+      function renderConfetti() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let active = false;
+
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.15; // gravity
+          p.rotation += p.rotationSpeed;
+          p.alpha -= 0.012;
+
+          if (p.alpha > 0) {
+            active = true;
+            ctx.save();
+            ctx.globalAlpha = p.alpha;
+            ctx.translate(p.x, p.y);
+            ctx.rotate((p.rotation * Math.PI) / 180);
+            ctx.fillStyle = p.color;
+            ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.6);
+            ctx.restore();
+          }
+        });
+
+        if (active && frame < 90) {
+          frame++;
+          requestAnimationFrame(renderConfetti);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      renderConfetti();
+    }
+
+    // 2. Collapsible Accordion Toggle
+    const toggleBtn = document.getElementById('order-accordion-toggle');
+    const body = document.getElementById('order-accordion-body');
+    const arrow = document.getElementById('accordion-arrow');
+
+    if (toggleBtn && body && arrow) {
+      toggleBtn.addEventListener('click', function () {
+        const isHidden = body.classList.contains('hidden');
+        if (isHidden) {
+          body.classList.remove('hidden');
+          arrow.classList.add('rotate-180');
+        } else {
+          body.classList.add('hidden');
+          arrow.classList.remove('rotate-180');
+        }
+      });
+    }
+
+    // 3. Share Live Tracking & Toast Feedback
+    const shareBtn = document.getElementById('share-tracking-btn');
+    const toast = document.getElementById('toast-message');
+    const toastText = document.getElementById('toast-text');
+
+    function showToast(msg) {
+      if (!toast) return;
+      toastText.textContent = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2500);
+    }
+
+    if (shareBtn) {
+      shareBtn.addEventListener('click', function () {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Track Meghana Foods Order #ZOM-89421',
+            text: 'Here is the real-time tracking link for my Zomato order!',
+            url: window.location.href
+          }).catch(() => {
+            showToast('Tracking link copied to clipboard!');
+          });
+        } else {
+          showToast('Live tracking link copied to clipboard!');
+        }
+      });
+    }
+
+    // 4. Message Driver trigger
+    const chatBtn = document.getElementById('open-chat-btn');
+    if (chatBtn) {
+      chatBtn.addEventListener('click', function () {
+        showToast('Chat session connected with Ramesh');
+      });
+    }
+  })();
+</script></main></body></html>
